@@ -553,7 +553,7 @@ a.navbar-brand {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(/web/20190304173418im_/http://thepatchdr.com.au/images/renovations_melbourne.jpg) top center no-repeat #000;
+    background: url(/images/web/20190304173418im_/http://thepatchdr.com.au/images/renovations_melbourne.jpg) top center no-repeat #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -667,7 +667,7 @@ a.navbar-brand {
 .about-section {    
 	width: 100%;    
 	color: #fff;    
-	background: url(/web/20190304173418im_/http://thepatchdr.com.au/images/painters_melbourne.jpg) center center no-repeat #000;
+	background: url(/images/web/20190304173418im_/http://thepatchdr.com.au/images/painters_melbourne.jpg) center center no-repeat #000;
 	-webkit-background-size: cover;
     -moz-background-size: cover;    
 	background-size: cover;
@@ -725,7 +725,7 @@ a.navbar-brand {
 }
 .section-sqt{
     color: #5e5f5f;
-    background: url(/web/20190304173418im_/http://thepatchdr.com.au/images/TPD_Snap_Text_Quote_Image.jpg) no-repeat bottom left;
+    background: url(/images/web/20190304173418im_/http://thepatchdr.com.au/images/TPD_Snap_Text_Quote_Image.jpg) no-repeat bottom left;
     background-size: 41%;
 }
 .section-sqt h3{
@@ -753,7 +753,7 @@ a.navbar-brand {
 .features-section {
     width: 100%;
     color: #fff;
-    background: url(/web/20190304173418im_/http://thepatchdr.com.au/images/plasterers_melbourne.jpg) center center no-repeat #000;
+    background: url(/images/web/20190304173418im_/http://thepatchdr.com.au/images/plasterers_melbourne.jpg) center center no-repeat #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -1296,7 +1296,7 @@ form .form-control.captcha  {
 .contact-section {
     width: 100%;
     color: #fff;
-    background: url(/web/20190304173418im_/http://thepatchdr.com.au/images/plaster_repairs_melbourne.jpg) center center no-repeat #000;
+    background: url(/images/web/20190304173418im_/http://thepatchdr.com.au/images/plaster_repairs_melbourne.jpg) center center no-repeat #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -1422,7 +1422,7 @@ footer p  {
 }
 @media(max-width:436px)  {
     .about-section{
-        background: url("/web/20190304173418im_/http://thepatchdr.com.au/images/TPD_About_BG_Pic_Mobile.jpg") no-repeat #000000;
+        background: url("/images/web/20190304173418im_/http://thepatchdr.com.au/images/TPD_About_BG_Pic_Mobile.jpg") no-repeat #000000;
     }
     .call-action-section .title{
         font-size: 33px;
@@ -1459,13 +1459,13 @@ footer p  {
         font-size: 16px;
     }
     .features-section{
-        background: url(/web/20190304173418im_/http://thepatchdr.com.au/images/TPD_Services_Pic_Mobile_Version.jpg) center center no-repeat #000;
+        background: url(/images/web/20190304173418im_/http://thepatchdr.com.au/images/TPD_Services_Pic_Mobile_Version.jpg) center center no-repeat #000;
     }
     blockquote {
         min-height: 325px;
     }
     .contact-section {
-        background: url(/web/20190304173418im_/http://thepatchdr.com.au/images/TPD_Contact_Pic_Mobile_Version_2.jpg) center center no-repeat #000;
+        background: url(/images/web/20190304173418im_/http://thepatchdr.com.au/images/TPD_Contact_Pic_Mobile_Version_2.jpg) center center no-repeat #000;
     }
     .mobile_text{
         display: block;
