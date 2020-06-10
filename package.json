@@ -1,0 +1,23 @@
+{
+  "name": "the-patch-dr",
+  "version": "1.0.0",
+  "description": "Business website of Dallas",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webceyhan/the-patch-dr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webceyhan/the-patch-dr/issues"
+  },
+  "homepage": "https://github.com/webceyhan/the-patch-dr#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
