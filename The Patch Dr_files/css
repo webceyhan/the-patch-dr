@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://web.archive.org/web/20190312044645im_/https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://web.archive.org/web/20190312044645im_/https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://web.archive.org/web/20190312044645im_/https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://web.archive.org/web/20190312044645im_/https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://web.archive.org/web/20190312044645im_/https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 04:46:45 Mar 12, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:33:50 Jun 10, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  load_resource: 399.767
+  PetaboxLoader3.datanode: 277.293 (5)
+  captures_list: 432.787
+  RedisCDXSource: 25.206
+  esindex: 0.006
+  LoadShardBlock: 362.399 (3)
+  exclusion.robots.policy: 0.122
+  exclusion.robots: 0.132
+  CDXLines.iter: 21.337 (3)
+  PetaboxLoader3.resolve: 222.102 (2)
+*/
