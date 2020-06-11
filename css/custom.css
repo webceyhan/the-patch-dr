@@ -1374,13 +1374,6 @@ footer p  {
      margin:  0;
  }
 
-@media(max-width:767px)  {
-    
-footer p  {
-     text-align:  left;
- }
-
-}
 
 /* Scroll To Top --------------------------- */
 .scroll-to-top {
