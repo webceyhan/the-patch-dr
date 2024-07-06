@@ -83,11 +83,11 @@ body {
 }
 
 .common-text-color {
-    	color:  #eb5e54;
+    	color:  #ea5d56;
 }
 
 .common-bg-color {
-    background-color:  #eb5e54;
+    background-color:  #ea5d56;
 }
 
 .title {
@@ -1314,8 +1314,9 @@ form .form-control.captcha  {
 
 }
 .navbar-custom .navbar-brand .black_logo{
-    width: 250px;
     opacity: 1;
+    width: 200px;
+    margin-top: 5px;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
@@ -1324,8 +1325,9 @@ form .form-control.captcha  {
     position: absolute;
 }
 .navbar-custom .navbar-brand .white_logo{
-    width: 200px;
     opacity: 0;
+    width: 200px;
+    margin-top: -5px;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
@@ -1349,7 +1351,7 @@ form .form-control.captcha  {
     }
     .navbar-custom .navbar-brand .white_logo{
         opacity: 1;
-        width: 250px;
+        width: 200px;
     }
 
 }
@@ -1489,6 +1491,19 @@ footer p  {
     .about_mobile{
         margin-bottom: 25px;
         margin-top: 25px;
+    }
+}
+
+#side-logo-wrapper {	
+	position: absolute;
+    	float: right;
+    	margin-top: -70px;
+    	margin-left: 81%;
+}
+
+@media (max-width: 768px) {
+    #side-logo-wrapper {
+        display: none;
     }
 }
 /*
