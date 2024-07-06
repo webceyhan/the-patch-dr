@@ -7,12 +7,26 @@
         <title>The Patch Dr</title>
 
         <!-- Favions -->
-        <link rel="manifest" href="/images/site.webmanifest">
-        <link rel="shortcut icon" href="/images/favicon.ico">
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-apple-180x180.png">
-        
+        <link rel="manifest" href="/images/site.webmanifest" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/favicon-16x16.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon-32x32.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/images/favicon-apple-180x180.png"
+        />
+
         <meta
             name="description"
             content="Handy Man, Responsive One Page Template"
@@ -57,7 +71,7 @@
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <!-- Preloader -->
-        <div class="preloader" style="display: none;">
+        <div class="preloader">
             <div class="spinner">
                 <span></span>
                 <span></span>
@@ -68,10 +82,7 @@
         <!-- Backstretch Carousel -->
         <div class="backstretch-carousel"></div>
         <!-- Navigation -->
-        <nav
-            class="navbar navbar-custom navbar-fixed-top top-nav-collapse"
-            role="navigation"
-        >
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button
@@ -185,6 +196,7 @@
                                 <img
                                     alt="image alternative"
                                     src="/images/services/repairs.png"
+                                    loading="lazy"
                                 />
                                 <figcaption class="common-bg-color">
                                     <h4>Plaster Repairs</h4>
@@ -196,6 +208,7 @@
                                 <img
                                     alt="image alternative"
                                     src="/images/services/plastering.png"
+                                    loading="lazy"
                                 />
                                 <figcaption class="common-bg-color">
                                     <h4>Plastering</h4>
@@ -207,6 +220,7 @@
                                 <img
                                     alt="image alternative"
                                     src="/images/services/consultancy.png"
+                                    loading="lazy"
                                 />
                                 <figcaption class="common-bg-color">
                                     <h4>Consultancy</h4>
@@ -219,6 +233,7 @@
                                 <img
                                     alt="image alternative"
                                     src="/images/services/painting.png"
+                                    loading="lazy"
                                 />
                                 <figcaption class="common-bg-color">
                                     <h4>Painting</h4>
@@ -334,23 +349,22 @@
         <!-- Features Section Start -->
         <section id="features" class="">
             <div class="features-section content-section parallax">
-
                 <div id="side-logo-wrapper">
-                    <img src="/images/side-logo.png" width="270" >
-                </div>
-
-                <div class="container">
-                    <div class="text-center">
-                        <h2 class="title">OUR COMPLETE LIST OF SERVICES</h2>
-                        <h4 class="common-text-color">
-                            QUALITY COMES NATURALLY WITH PASSION
-                        </h4>
-                    </div>
+                    <img src="/images/side-logo.png" width="270" />
                 </div>
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-md-5 col-md-offset-1">
+                        <div class="col-sm-12 text-center">
+                            <h2 class="title">OUR COMPLETE LIST OF SERVICES</h2>
+                            <h4 class="common-text-color">
+                                QUALITY COMES NATURALLY WITH PASSION
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-5 col-md-offset-2">
                             <div class="features-item">
                                 <h3 class="features-title">
                                     <span class="common-text-color">01.</span>
@@ -368,7 +382,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-5">
+                        <div class="col-sm-6 col-md-4">
                             <div class="features-item">
                                 <h3 class="features-title">
                                     <span class="common-text-color">02.</span>
@@ -387,11 +401,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-md-5 col-md-offset-1">
+                        <div class="col-sm-6 col-md-5 col-md-offset-2">
                             <div class="features-item">
                                 <h3 class="features-title">
                                     <span class="common-text-color">03.</span>
@@ -407,14 +419,16 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-md-5">
+                        <div class="col-sm-6 col-md-4">
                             <div class="features-item">
                                 <h3 class="features-title">
                                     <span class="common-text-color">04.</span>
                                     CONSULTANCY
                                 </h3>
                                 <ul>
-                                    <li>Colour Scheme Advice &amp; Consultancy</li>
+                                    <li>
+                                        Colour Scheme Advice &amp; Consultancy
+                                    </li>
                                     <li>Design &amp; Product Consultancy</li>
                                 </ul>
                             </div>
@@ -440,30 +454,17 @@
                     <ul
                         id="portfoliogrid"
                         class="row portfolio desktop_text shuffle"
-                        style="
-                            position: relative;
-                            overflow: hidden;
-                            height: 1880px;
-                            transition: height 250ms ease-out 0s;
-                        "
                     >
                         <li
                             class="col-lg-3 col-sm-6 col-xs-6 portfolio-item shuffle-item filtered"
                             data-groups='["all", "basement", "kitchen", "paintaing"]'
-                            style="
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                visibility: visible;
-                                transition: transform 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
-                            "
                         >
                             <figure>
                                 <div>
                                     <img
                                         src="/images/work/TPD_Gallery 3.jpg"
                                         alt="img06"
+                                        loading="lazy"
                                     />
                                 </div>
                                 <figcaption>
@@ -486,31 +487,20 @@
                                 </figcaption>
                             </figure>
                         </li>
+
                         <li
                             class="col-lg-3 col-sm-6 col-xs-6 portfolio-item shuffle-item filtered"
                             data-groups='["all", "sanitary", "kitchen", "electrical"]'
-                            style="
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                visibility: visible;
-                                opacity: 1;
-                                transform: translate3d(470px, 0px, 0px)
-                                    scale3d(1, 1, 1);
-                                transition: transform 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
-                            "
                         >
                             <figure>
                                 <div>
                                     <img
                                         src="/images/work/TPD_Gallery 2.jpg"
                                         alt="img02"
+                                        loading="lazy"
                                     />
                                 </div>
-                                <figcaption
-                                    style="background: rgba(35, 35, 35, 0.9);"
-                                >
+                                <figcaption>
                                     <h4>CAFE RENOVATION</h4>
                                     <!--<span>Sub Title</span>-->
                                     <p class="light_grey">Location: Richmond</p>
@@ -532,23 +522,13 @@
                         <li
                             class="col-lg-3 col-sm-6 col-xs-6 portfolio-item shuffle-item filtered"
                             data-groups='["all", "kitchen", "paintaing"]'
-                            style="
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                visibility: visible;
-                                opacity: 1;
-                                transform: translate3d(0px, 470px, 0px)
-                                    scale3d(1, 1, 1);
-                                transition: transform 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
-                            "
                         >
                             <figure>
                                 <div>
                                     <img
                                         src="/images/work/TPD_Gallery 1.jpg"
                                         alt="img04"
+                                        loading="lazy"
                                     />
                                 </div>
                                 <figcaption>
@@ -562,6 +542,7 @@
                                     <a
                                         href="/images/work/TPD_Gallery_Photo%203%20Collage.jpg"
                                         data-rel="prettyPhoto[work_gallery]"
+                                        loading="lazy"
                                         title="COMPLETE EXTENSION PLASTERING IN EPPING"
                                         >Take a look</a
                                     >
@@ -571,28 +552,16 @@
                         <li
                             class="col-lg-3 col-sm-6 col-xs-6 portfolio-item shuffle-item filtered"
                             data-groups='["all", "electrical", "kitchen"]'
-                            style="
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                visibility: visible;
-                                opacity: 1;
-                                transform: translate3d(470px, 470px, 0px)
-                                    scale3d(1, 1, 1);
-                                transition: transform 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
-                            "
                         >
                             <figure>
                                 <div>
                                     <img
                                         src="/images/work/TPD_Gallery 4.jpg"
                                         alt="img01"
+                                        loading="lazy"
                                     />
                                 </div>
-                                <figcaption
-                                    style="background: rgba(35, 35, 35, 0.9);"
-                                >
+                                <figcaption>
                                     <h4>Plaster Repairs</h4>
                                     <!--<span>Sub Title</span>-->
                                     <p class="light_grey">
@@ -615,28 +584,16 @@
                         <li
                             class="col-lg-3 col-sm-6 col-xs-6 portfolio-item shuffle-item filtered"
                             data-groups='["all", "plumbing","kitchen"]'
-                            style="
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                visibility: visible;
-                                opacity: 1;
-                                transform: translate3d(0px, 940px, 0px)
-                                    scale3d(1, 1, 1);
-                                transition: transform 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
-                            "
                         >
                             <figure>
                                 <div>
                                     <img
                                         src="/images/work/TPD_Gallery 5.jpg"
                                         alt="img03"
+                                        loading="lazy"
                                     />
                                 </div>
-                                <figcaption
-                                    style="background: rgba(35, 35, 35, 0.9);"
-                                >
+                                <figcaption>
                                     <h4>Restaurant Renovation</h4>
                                     <!--<span>Sub Title</span>-->
                                     <p class="light_grey">
@@ -654,21 +611,18 @@
                                         >Take a look</a
                                     >
                                     <a
-                                        style="display: none;"
                                         href="/images/work/Madras_Before%20&amp;%20After_Courtyard.jpg"
                                         data-rel="prettyPhoto[work_gallery]"
                                         title="EXTERIOR COURTYARD REPAINT, BEFORE &amp; AFTER."
                                         >Take a look</a
                                     >
                                     <a
-                                        style="display: none;"
                                         href="/images/work/Madras%20Bros-12_Small.jpg"
                                         data-rel="prettyPhoto[work_gallery]"
                                         title="MADRAS BROS, COLLINGWOOD."
                                         >Take a look</a
                                     >
                                     <a
-                                        style="display: none;"
                                         href="/images/work/Madras_Door_Before%20&amp;%20After.jpg"
                                         data-rel="prettyPhoto[work_gallery]"
                                         title="ENTRY &amp; SHOPFRONT REPAINT, BEFORE &amp; AFTER. MADRAS BROS, COLLINGWOOD."
@@ -680,23 +634,13 @@
                         <li
                             class="col-lg-3 col-sm-6 col-xs-6 portfolio-item shuffle-item filtered"
                             data-groups='["all", "basement", "paintaing"]'
-                            style="
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                visibility: visible;
-                                opacity: 1;
-                                transform: translate3d(470px, 940px, 0px)
-                                    scale3d(1, 1, 1);
-                                transition: transform 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
-                            "
                         >
                             <figure>
                                 <div>
                                     <img
                                         src="/images/work/TPD_Gallery 6.jpg"
                                         alt="img05"
+                                        loading="lazy"
                                     />
                                 </div>
                                 <figcaption>
@@ -721,28 +665,16 @@
                         <li
                             class="col-lg-3 col-sm-6 col-xs-6 portfolio-item shuffle-item filtered"
                             data-groups='["all", "sanitary", "plumbing"]'
-                            style="
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                visibility: visible;
-                                opacity: 1;
-                                transform: translate3d(0px, 1410px, 0px)
-                                    scale3d(1, 1, 1);
-                                transition: transform 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
-                            "
                         >
                             <figure>
                                 <div>
                                     <img
                                         src="/images/work/TPD_Gallery 7.jpg"
                                         alt="img05"
+                                        loading="lazy"
                                     />
                                 </div>
-                                <figcaption
-                                    style="background: rgba(35, 35, 35, 0.9);"
-                                >
+                                <figcaption>
                                     <h4>Ceiling Repairs</h4>
                                     <!--<span>Sub Title</span>-->
                                     <p class="light_grey">Location: Richmond</p>
@@ -763,23 +695,13 @@
                         <li
                             class="col-lg-3 col-sm-6 col-xs-6 portfolio-item shuffle-item filtered"
                             data-groups='["all", "kitchen", "electrical"]'
-                            style="
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                visibility: visible;
-                                opacity: 1;
-                                transform: translate3d(470px, 1410px, 0px)
-                                    scale3d(1, 1, 1);
-                                transition: transform 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
-                            "
                         >
                             <figure>
                                 <div>
                                     <img
                                         src="/images/work/TPD_Gallery 8.jpg"
                                         alt="img05"
+                                        loading="lazy"
                                     />
                                 </div>
                                 <figcaption>
@@ -812,6 +734,7 @@
                                     <img
                                         src="/images/work/TPD_Gallery 2.jpg"
                                         alt="img02"
+                                        loading="lazy"
                                     />
                                 </div>
                             </figure>
@@ -825,6 +748,7 @@
                                     <img
                                         src="/images/work/TPD_Gallery 3.jpg"
                                         alt="img06"
+                                        loading="lazy"
                                     />
                                 </div>
                             </figure>
@@ -838,6 +762,7 @@
                                     <img
                                         src="/images/work/TPD_Gallery 1.jpg"
                                         alt="img04"
+                                        loading="lazy"
                                     />
                                 </div>
                             </figure>
@@ -851,6 +776,7 @@
                                     <img
                                         src="/images/work/TPD_Gallery 4.jpg"
                                         alt="img01"
+                                        loading="lazy"
                                     />
                                 </div>
                             </figure>
@@ -864,6 +790,7 @@
                                     <img
                                         src="/images/work/TPD_Gallery 5.jpg"
                                         alt="img03"
+                                        loading="lazy"
                                     />
                                 </div>
                             </figure>
@@ -877,6 +804,7 @@
                                     <img
                                         src="/images/work/TPD_Gallery 6.jpg"
                                         alt="img05"
+                                        loading="lazy"
                                     />
                                 </div>
                             </figure>
@@ -890,6 +818,7 @@
                                     <img
                                         src="/images/work/TPD_Gallery 8.jpg"
                                         alt="img05"
+                                        loading="lazy"
                                     />
                                 </div>
                             </figure>
@@ -903,6 +832,7 @@
                                     <img
                                         src="/images/work/TPD_Gallery 7.jpg"
                                         alt="img05"
+                                        loading="lazy"
                                     />
                                 </div>
                             </figure>
@@ -1079,7 +1009,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="https://www.tiktok.com/@thepatchdr"                                        
+                                        href="https://www.tiktok.com/@thepatchdr"
                                         target="_blank"
                                     >
                                         <img
@@ -1094,7 +1024,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="https://www.hipages.com.au/thepatchdr"                                        
+                                        href="https://www.hipages.com.au/thepatchdr"
                                         target="_blank"
                                     >
                                         <img
