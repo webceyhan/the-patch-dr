@@ -312,8 +312,8 @@ a.navbar-brand .light {
     transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
 .top-nav-collapse {
-    padding: 0;
-    background-color: #fff;
+    padding: 3px 0;
+    background-color: rgb(255 255 255 / 95%);
     border-bottom: 1px solid transparent;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .4);
 }
