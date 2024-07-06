@@ -833,7 +833,6 @@
     <!-- <script src="/js/jquery.validate.min.js" type="text/javascript"></script> -->
     <!-- <script src="/js/jquery.form.min.js" type="text/javascript"></script> -->
     <!-- <script src="/js/jquery.easing.min.js" type="text/javascript"></script> -->
-    <!-- <script src="/js/jquery.shuffle.modernizr.min.js" type="text/javascript"></script> -->
     <!-- <script src="/js/jquery.prettyPhoto.js" type="text/javascript"></script> -->
     <!-- <script src="/js/selectize.min.js" type="text/javascript"></script> -->
     <!-- <script src="/js/jquery.realperson.min.js" type="text/javascript"></script> -->
