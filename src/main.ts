@@ -1,5 +1,12 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import './css/bootstrap.min.css';
+import './css/animate.css';
+import './css/prettyPhoto.css';
+import './css/selectize.bootstrap3.css';
+import './css/custom.css';
+import './css/font-awesome.min.css';
+import './css/custom-fonts.css';
 
-createApp(App).mount('#app')
+import { createApp } from 'vue';
+import App from './App.vue';
+
+createApp(App).mount('#app');
