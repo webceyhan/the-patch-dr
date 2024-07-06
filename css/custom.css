@@ -1493,6 +1493,19 @@ footer p  {
         margin-top: 25px;
     }
 }
+
+#side-logo-wrapper {	
+	position: absolute;
+    	float: right;
+    	margin-top: -70px;
+    	margin-left: 81%;
+}
+
+@media (max-width: 768px) {
+    #side-logo-wrapper {
+        display: none;
+    }
+}
 /*
      FILE ARCHIVED ON 17:34:18 Mar 04, 2019 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 13:33:50 Jun 10, 2020.
