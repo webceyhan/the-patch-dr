@@ -76,9 +76,7 @@ body {
 .content-section {
     padding-top: 80px;
 }
-.my_mobile {
-    display: none;
-}
+
 @media (min-width: 767px) {
     .content-section {
         padding-top: 100px;
@@ -408,14 +406,7 @@ a.navbar-brand .light {
     section .parallax {
         /*background-position: left !important;*/
     }
-    .my_mobile {
-        display: block;
-        margin-bottom: 40px;
-        width: 100%;
-    }
-    .section-sqt {
-        background: none !important;
-    }
+
 }
 
 /* Button Style --------------------------- */
@@ -606,12 +597,6 @@ a.navbar-brand .light {
 }
 
 
-@media (min-width: 992px) {
-    .section-sqt .col-md-offset-5 {
-        margin-left: 38.666667%;
-    }
-}
-
 @media (min-width: 767px) {
     .welcome {
         height: 100%;
@@ -653,67 +638,11 @@ a.navbar-brand .light {
     margin-bottom: 20px;
 }
 
-/* Call-action-section Section ------------------ */
-.call-action-section {
-    width: 100%;
-    color: #fff;
-    padding: 15px 0 8px;
-    background-color: #eb5e54;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.call-action-section h4 {
-    margin-bottom: 10px;
-}
-.call-action-section .title {
-    font-family: Roboto, sans-serif;
-    text-transform: none;
-    font-weight: 100 !important;
-    letter-spacing: -0.5px;
-    font-size: 38px;
-    text-shadow: none;
-}
 .light_grey {
     color: #a8a8a8 !important;
 }
 .grey {
     color: #5e5f5f !important;
-}
-.section-sqt h1 {
-    margin-top: -5px;
-    font-size: 65px;
-    margin-bottom: 27px;
-    letter-spacing: -3px;
-}
-.section-sqt p {
-    font-size: 16px;
-    line-height: 1.3;
-}
-.section-sqt {
-    color: #5e5f5f;
-    background: url(/images/TPD_Snap_Text_Quote_Image.jpg) no-repeat bottom left;
-    background-size: 41%;
-}
-.section-sqt h3 {
-    font-size: 58px;
-    margin-bottom: 40px;
-    font-weight: 300;
-    margin-top: 31px;
-}
-
-.section-sqt a {
-    color: #888888;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -ms-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-}
-.section-sqt a:hover {
-    color: #eb5e54;
 }
 
 .about-section p {
@@ -941,16 +870,6 @@ form .form-control.captcha {
 @media (max-width: 436px) {
     .about-section {
         background: url(/images/TPD_About_BG_Pic_Mobile.jpg) no-repeat #000000;
-    }
-    .call-action-section .title {
-        font-size: 33px;
-        /*font-weight: 300 !important;*/
-    }
-    .section-sqt {
-        padding-top: 20px;
-    }
-    .section-sqt h3 {
-        font-size: 43px;
     }
 
     blockquote {
