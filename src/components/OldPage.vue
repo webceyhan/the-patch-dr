@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import FaIcon from "./FaIcon.vue";
+import ServicesSection from "./ServicesSection.vue";
 </script>
 
 <template>
@@ -103,66 +104,8 @@ import FaIcon from "./FaIcon.vue";
         </div>
       </div>
     </div>
-    <!-- Services Section Start -->
-    <section id="service" class="container">
-      <div class="row content-section">
-        <div id="services_left" class="col-lg-12">
-          <h2 class="services_title text-center">WHAT WE DO BEST</h2>
-          <div class="row">
-            <div class="service-item col-lg-3 col-sm-6">
-              <figure>
-                <img
-                  alt="image alternative"
-                  src="/images/services/repairs.png"
-                  loading="lazy"
-                />
-                <figcaption class="common-bg-color">
-                  <h4>Plaster Repairs</h4>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="service-item col-lg-3 col-sm-6">
-              <figure>
-                <img
-                  alt="image alternative"
-                  src="/images/services/plastering.png"
-                  loading="lazy"
-                />
-                <figcaption class="common-bg-color">
-                  <h4>Plastering</h4>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="service-item col-lg-3 col-sm-6">
-              <figure>
-                <img
-                  alt="image alternative"
-                  src="/images/services/consultancy.png"
-                  loading="lazy"
-                />
-                <figcaption class="common-bg-color">
-                  <h4>Consultancy</h4>
-                </figcaption>
-              </figure>
-            </div>
 
-            <div class="service-item col-lg-3 col-sm-6">
-              <figure>
-                <img
-                  alt="image alternative"
-                  src="/images/services/painting.png"
-                  loading="lazy"
-                />
-                <figcaption class="common-bg-color">
-                  <h4>Painting</h4>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Section End -->
+    <ServicesSection id="service" />
 
     <!-- About Section Start -->
     <section id="about">
