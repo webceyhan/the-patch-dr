@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import FaIcon from "./FaIcon.vue";
 import ServicesSection from "./ServicesSection.vue";
+import FeaturesSection from "./FeaturesSection.vue";
 </script>
 
 <template>
@@ -194,90 +195,7 @@ import ServicesSection from "./ServicesSection.vue";
       </div>
     </section>
 
-    <!-- Features Section Start -->
-    <section id="features" class="">
-      <div class="features-section content-section parallax">
-        <div id="side-logo-wrapper">
-          <img src="/images/side-logo.png" width="270" />
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <h2 class="title">OUR COMPLETE LIST OF SERVICES</h2>
-              <h4 class="common-text-color">QUALITY COMES NATURALLY WITH PASSION</h4>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-md-offset-1">
-              <div class="features-item">
-                <h3 class="features-title">
-                  <span class="common-text-color">01.</span>
-                  PLASTER REPAIRS
-                </h3>
-                <ul>
-                  <li>Plaster Hole Repairs</li>
-                  <li>Crack Repairs</li>
-                  <li>Water Damage Repairs</li>
-                  <li>Internal Render Repairs</li>
-                  <li>Decorative Rosette &amp; Arch Removal</li>
-                  <li>General Patch &amp; Repairs</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="features-item">
-                <h3 class="features-title">
-                  <span class="common-text-color">02.</span>
-                  FULL PLASTERING
-                </h3>
-                <ul>
-                  <li>Bathroom Reno WR Plastering</li>
-                  <li>Kitchen Reno Plastering</li>
-                  <li>New Extension Plastering</li>
-                  <li>Decorative Cornice Installation</li>
-                  <li>Sagging Ceiling Repair/Replacement</li>
-                  <li>Cornice to Square Set Transformation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-md-offset-1">
-              <div class="features-item">
-                <h3 class="features-title">
-                  <span class="common-text-color">03.</span>
-                  PAINTING
-                </h3>
-                <ul>
-                  <li>Interior Repainting</li>
-                  <li>Renovation/Extension Painting</li>
-                  <li>Enamel Doors &amp; Trims</li>
-                  <li>Weatherboard Repair &amp; Painting</li>
-                  <li>15+ Years Professional Experience</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <div class="features-item">
-                <h3 class="features-title">
-                  <span class="common-text-color">04.</span>
-                  CONSULTANCY
-                </h3>
-                <ul>
-                  <li>Colour Scheme Advice &amp; Consultancy</li>
-                  <li>Design &amp; Product Consultancy</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Features Section End -->
+    <FeaturesSection id="features" />
 
     <!-- Portfolio Section Start -->
     <section id="portfolio">
