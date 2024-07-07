@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import FaIcon from "./FaIcon.vue";
+</script>
 
 <template>
   <div id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -23,11 +25,9 @@
             data-toggle="collapse"
             data-target=".navbar-main-collapse"
           >
-            <i class="fa fa-bars"></i>
+            <FaIcon name="bars" />
           </button>
           <a class="navbar-brand page-scroll" href="#page-top">
-            <!-- TIP: Change this for the name of your site -->
-            <!--<i class="fa fa-h-square"></i>  THE PATCH <span class="light">DR.</span>-->
             <img src="/images/TPD_Logo On Black.png" class="black_logo" />
             <img src="/images/TPD_Logo On White.png" class="white_logo" />
           </a>
@@ -666,7 +666,8 @@
             Hear From Our
             <span class="common-text-color">Happy Clients</span>
           </h2>
-          <i class="fa fa-quote-left fa-3x"></i>
+
+          <FaIcon name="quote-left" style="width: 32px; height: 32px" />
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="item next left">
@@ -757,20 +758,20 @@
               <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>-->
               <ul class="address">
                 <li>
-                  <i class="fa fa-map-marker"></i>
+                  <FaIcon name="location-dot" />
                   <span> Location:</span> Melbourne, Australia
                 </li>
                 <li>
-                  <i class="fa fa-phone"></i>
+                  <FaIcon name="phone" />
                   <span> Phone:</span> 0422 782 198
                 </li>
                 <li>
-                  <i class="fa fa-envelope"></i>
+                  <FaIcon name="envelope" />
                   <span> Email:</span>
                   <a href="mailto:jobs@thepatchdr.com.au"> jobs@thepatchdr.com.au</a>
                 </li>
                 <li>
-                  <i class="fa fa-globe"></i>
+                  <FaIcon name="globe" />
                   <span> Website:</span>
                   <a href="http://www.thepatchdr.com.au/"> www.thepatchdr.com.au</a>
                 </li>
@@ -821,7 +822,9 @@
 
     <!-- Scroll to Top Start -->
     <div class="scroll-to-top affix" data-spy="affix" data-offset-top="200">
-      <a href="#page-top" class="page-scroll"><i class="fa fa-arrow-up"></i></a>
+      <a href="#page-top" class="page-scroll">
+        <FaIcon name="arrow-up" />
+      </a>
     </div>
     <!-- Scroll to Top End -->
   </div>
