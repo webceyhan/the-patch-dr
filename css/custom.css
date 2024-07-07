@@ -849,8 +849,11 @@ a.navbar-brand .light {
 .section-portfolio .portfolio-item {
     margin: 0;
     padding: 0;
-    width: 330px;
-    height: 330px;
+}
+
+.section-portfolio .portfolio-item img {
+    width: 100%;
+    height: auto;
 }
 
 .portfolio {
