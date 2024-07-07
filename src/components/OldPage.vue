@@ -3,6 +3,7 @@ import FaIcon from "./FaIcon.vue";
 import ServicesSection from "./ServicesSection.vue";
 import FeaturesSection from "./FeaturesSection.vue";
 import PortfolioSection from "./PortfolioSection.vue";
+import TestimonialsSection from "./TestimonialsSection.vue";
 </script>
 
 <template>
@@ -200,88 +201,7 @@ import PortfolioSection from "./PortfolioSection.vue";
 
     <PortfolioSection id="portfolio" />
 
-    <!-- Testimonials Section Start -->
-    <section id="testimonials">
-      <div class="section-testimonial content-section text-center">
-        <div class="container">
-          <h2 class="section-title grey">
-            Hear From Our
-            <span class="common-text-color">Happy Clients</span>
-          </h2>
-
-          <FaIcon name="quote-left" style="width: 32px; height: 32px" />
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="item next left">
-                <blockquote>
-                  <p>
-                    The Patch Dr. did a great job. Very neat work, and Iʼm happy with the
-                    end result.
-                  </p>
-                  <small>Janette Eley, Frankston South. </small>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote>
-                  <p>
-                    Dallas helped me do some urgent patching of some holes which were made
-                    while installing ceiling fans in my apartment. He was more than happy
-                    to accommodate my tight schedule, and the patching work was fantastic.
-                    I’d highly recommend The Patch Dr. to anyone.
-                  </p>
-                  <small>William Nguyen, Footscray.</small>
-                </blockquote>
-              </div>
-              <div class="item active left">
-                <blockquote>
-                  <p>
-                    Dallas was very quick to respond, and came &amp; completed the job the
-                    following day. He did a great job and left our house looking neat and
-                    tidy!
-                  </p>
-                  <small>Osher Klein, St Kilda East.</small>
-                </blockquote>
-              </div>
-            </div>
-
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="0"
-                class="active"
-              >
-                <img
-                  alt="image alternative"
-                  src="/images/TPD_Testimonial Left_Janette.jpg"
-                  width="64"
-                  height="64"
-                  class="img-circle"
-                />
-              </li>
-              <li data-target="#carousel-example-generic" data-slide-to="1" class="">
-                <img
-                  alt="image alternative"
-                  src="/images/TPD_Testimonial Centre_William.jpg"
-                  width="64"
-                  height="64"
-                  class="img-circle"
-                />
-              </li>
-              <li data-target="#carousel-example-generic" data-slide-to="2" class="">
-                <img
-                  alt="image alternative"
-                  src="/images/TPD_Testimonial Right_Osher.jpg"
-                  width="64"
-                  height="64"
-                  class="img-circle"
-                />
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Testimonials Section End -->
+    <TestimonialsSection id="testimonials" />
 
     <!-- Contact Section Start -->
     <section id="contact" class="">
