@@ -573,11 +573,7 @@ a.navbar-brand .light {
 .welcome .welcome-body .welcome-text {
     font-size: 18px;
 }
-.services_title {
-    color: #b7b7b7;
-    margin-bottom: 45px;
-    font-weight: 700;
-}
+
 .phone_body a img {
     width: 33px;
     margin-right: 7px;
@@ -641,10 +637,6 @@ a.navbar-brand .light {
 }
 
 @media (min-width: 767px) {
-    #service .content-section {
-        padding-top: 110px;
-        padding-bottom: 50px;
-    }
     .welcome {
         height: 100%;
         padding: 0;
@@ -999,48 +991,13 @@ div.pp_default .pp_description {
     margin: 0 0 10px;
 }
 
-/* Service Section -------------------- */
-#services_left .service-item {
-    margin-bottom: 25px;
-}
-.services_title {
-    text-transform: uppercase;
-}
-.services_title span {
-    display: block;
-    font-size: 35px;
-}
-.servicessubtitle {
-    text-transform: uppercase;
-    margin-bottom: 18px;
-}
-#services_left figure img {
-    display: block;
-    width: 100%;
-    border-radius: 4px 4px 0 0;
-}
-#services_left figcaption {
-    padding: 13px 22px;
-    text-align: left;
-    border-radius: 0 0 4px 4px;
-}
-#services_left figcaption h4 {
-    font-weight: 400;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0px;
-    font-size: 20px;
-}
 .about-section p {
     color: #fff;
     font-weight: 300;
     line-height: 1.55;
     padding-right: 28px;
 }
-#services_left figcaption p {
-    margin: 0;
-}
+
 #about h2 {
     font-size: 30px;
     font-weight: 700;
@@ -1117,22 +1074,6 @@ form .messagebox .bg-danger {
 }
 
 /* Quote Form -------------------- */
-#services_right_form .form-control {
-    margin-bottom: 10px;
-    box-shadow: none;
-}
-
-#services_right_form .form-control.has-success {
-    color: #595959;
-}
-
-#services_right_form textarea.form-control {
-    min-height: 105px;
-}
-
-#services_right_form h4.notice-head {
-    margin-top: 30px;
-}
 
 .selectize-dropdown .active {
     background-color: #eb5e54;
@@ -1178,15 +1119,11 @@ form .messagebox .bg-danger {
 }
 
 @media (max-width: 767px) {
-    .servicessubtitle,
     .notice-head {
         text-align: center;
     }
     .about-section p {
         padding-right: 0;
-    }
-    .services_title {
-        color: #a8a8a8;
     }
     .title.light_grey {
         color: #a8a8a8 !important;
@@ -1444,9 +1381,7 @@ footer p {
     .contact-section.content-section {
         padding-top: 60px;
     }
-    #service .content-section {
-        padding-top: 110px;
-    }
+
     .features-section.content-section h4 {
         font-size: 16px;
     }
