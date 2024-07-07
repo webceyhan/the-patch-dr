@@ -5,6 +5,7 @@ import FeaturesSection from "./FeaturesSection.vue";
 import PortfolioSection from "./PortfolioSection.vue";
 import TestimonialsSection from "./TestimonialsSection.vue";
 import ContactSection from "./ContactSection.vue";
+import FooterSection from "./FooterSection.vue";
 </script>
 
 <template>
@@ -206,13 +207,7 @@ import ContactSection from "./ContactSection.vue";
 
     <ContactSection id="contact" />
 
-    <!-- Footer Start -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright © The Patch Dr. 2024</p>
-      </div>
-    </footer>
-    <!-- Footer End -->
+    <FooterSection />
 
     <!-- Scroll to Top Start -->
     <div class="scroll-to-top affix" data-spy="affix" data-offset-top="200">
