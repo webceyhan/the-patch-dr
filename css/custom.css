@@ -1493,9 +1493,8 @@ footer p {
 
 #side-logo-wrapper {
     position: absolute;
-    float: right;
-    margin-top: 75px;
-    margin-left: 81%;
+    margin-top: -75px;
+    right: 0;
 }
 
 @media (max-width: 768px) {
