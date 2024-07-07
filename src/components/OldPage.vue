@@ -4,6 +4,7 @@ import ServicesSection from "./ServicesSection.vue";
 import FeaturesSection from "./FeaturesSection.vue";
 import PortfolioSection from "./PortfolioSection.vue";
 import TestimonialsSection from "./TestimonialsSection.vue";
+import ContactSection from "./ContactSection.vue";
 </script>
 
 <template>
@@ -203,76 +204,7 @@ import TestimonialsSection from "./TestimonialsSection.vue";
 
     <TestimonialsSection id="testimonials" />
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="">
-      <div class="contact-section content-section parallax">
-        <div class="container">
-          <div class="text-center">
-            <h2 class="title">Get In Touch</h2>
-            <h4 class="common-text-color">
-              Connect with us via email or phone, or check out our online profiles
-            </h4>
-          </div>
-        </div>
-        <div class="container">
-          <div class="col-12">
-            <div class="contact-info">
-              <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>-->
-              <ul class="address">
-                <li>
-                  <FaIcon name="location-dot" />
-                  <span> Location:</span> Melbourne, Australia
-                </li>
-                <li>
-                  <FaIcon name="phone" />
-                  <span> Phone:</span> 0422 782 198
-                </li>
-                <li>
-                  <FaIcon name="envelope" />
-                  <span> Email:</span>
-                  <a href="mailto:jobs@thepatchdr.com.au"> jobs@thepatchdr.com.au</a>
-                </li>
-                <li>
-                  <FaIcon name="globe" />
-                  <span> Website:</span>
-                  <a href="http://www.thepatchdr.com.au/"> www.thepatchdr.com.au</a>
-                </li>
-              </ul>
-              <ul class="menu follow">
-                <li>
-                  <a href="https://www.facebook.com/thepatchdr" target="_blank">
-                    <img class="normal" src="/images/social/facebook.png" />
-                    <img class="rollover" src="/images/social/facebook-hover.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.tiktok.com/@thepatchdr" target="_blank">
-                    <img class="normal" src="/images/social/tiktok.png" />
-                    <img class="rollover" src="/images/social/tiktok-hover.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.hipages.com.au/thepatchdr" target="_blank">
-                    <img class="normal" src="/images/social/hipages.png" />
-                    <img class="rollover" src="/images/social/hipages-hover.png" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.yellowpages.com.au/vic/thornbury/thepatch-dr-1000001742637-listing.html?referredBy=www.yellowpages.com.au&amp;context=businessNameSearch"
-                    target="_blank"
-                  >
-                    <img class="normal" src="/images/social/yellowpages.png" />
-                    <img class="rollover" src="/images/social/yellowpages-hover.png" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Section End -->
+    <ContactSection id="contact" />
 
     <!-- Footer Start -->
     <footer>
