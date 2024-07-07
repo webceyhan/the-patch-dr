@@ -897,16 +897,6 @@ form .form-control.captcha {
     }
 }
 
-
-/* Footer Section ------------------ */
-footer {
-    padding: 25px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
 /* Scroll To Top --------------------------- */
 .scroll-to-top {
     background: #333;
