@@ -8,6 +8,7 @@ import ContactSection from "./ContactSection.vue";
 import FooterSection from "./FooterSection.vue";
 import CallActionSection from "./CallActionSection.vue";
 import AboutSection from "./AboutSection.vue";
+import WelcomeSection from "./WelcomeSection.vue";
 </script>
 
 <template>
@@ -74,43 +75,8 @@ import AboutSection from "./AboutSection.vue";
       <!-- /.container -->
     </nav>
 
-    <!-- Welcome Header -->
-    <header class="welcome">
-      <div class="welcome-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <h1 class="brand-heading">
-                SURGERY<span class="friction">,</span> FOR
-                <span class="common-text-color">SPACES.</span>
-              </h1>
-              <p class="welcome-text">
-                Combining quality, price, and friendly customer service, we offer one of
-                the best property improvement services in Melbourne. Read our
-                testimonials, and get in touch with us for a free quote today.
-              </p>
-              <!--<a href="#service" class="btn btn-default btn-lg page-scroll">We know how to do the job right!</a>-->
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="phone_body text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <a href="tel:%200422%20782%20198"
-              ><i
-                ><img class="static" src="/images/social/phone.png" /><img
-                  class="rollover"
-                  src="/images/social/phone-hover.png"
-              /></i>
-              0422 782 198</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    <WelcomeSection id="welcome" />
 
     <ServicesSection id="service" />
 

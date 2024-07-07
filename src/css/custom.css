@@ -278,26 +278,7 @@ a.navbar-brand .light {
 .navbar-fixed-top .navbar-collapse {
     max-height: 375px;
 }
-.phone_body {
-    margin-top: -80px;
-}
-.phone_body a {
-    color: #ffffff;
-    font-size: 40px;
-    vertical-align: top;
-    line-height: 33px;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -ms-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-}
-.phone_body a:hover {
-    color: #eb5e54;
-}
-.phone_body a:hover i {
-    color: #eb5e54;
-}
+
 .friction {
     font-size: 40px;
 }
@@ -391,13 +372,6 @@ a.navbar-brand .light {
     }
     .navbar-custom .navbar-collapse ul.nav li:last-child a {
         border-bottom: 0;
-    }
-    .phone_body a {
-        font-size: 30px;
-        line-height: 27px;
-    }
-    .phone_body a img {
-        width: 25px !important;
     }
 }
 
@@ -528,85 +502,6 @@ a.navbar-brand .light {
         transform: scale(1);
     }
 }
-
-/* Welcome Section ------------- */
-.welcome {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(/images/renovations_melbourne.jpg) top center no-repeat #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.welcome .welcome-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-.welcome .welcome-body .brand-heading {
-    font-size: 42px;
-    margin-bottom: 25px;
-}
-.welcome .welcome-body .welcome-text {
-    font-size: 18px;
-}
-
-.phone_body a img {
-    width: 33px;
-    margin-right: 7px;
-}
-.phone_body a img.static {
-    opacity: 1;
-    position: absolute;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    transition: all ease 0.3s;
-}
-.phone_body a img.rollover {
-    opacity: 0;
-    margin-top: -8px;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    transition: all ease 0.3s;
-}
-.phone_body a:hover img.static {
-    opacity: 0;
-}
-.phone_body a:hover img.rollover {
-    opacity: 1;
-}
-
-
-@media (min-width: 767px) {
-    .welcome {
-        height: 100%;
-        padding: 0;
-    }
-    .welcome .welcome-body .brand-heading {
-        margin: 0 auto 3px;
-        font-size: 64px;
-        font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
-        letter-spacing: -0.5px;
-    }
-    .welcome .welcome-body .welcome-text {
-        font-size: 18px;
-        margin-bottom: 50px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.28);
-    }
-}
-
 
 
 .light_grey {
@@ -840,8 +735,6 @@ form .form-control.captcha {
     .mobile_li {
         display: inline-block !important;
     }
-
-
 }
 
 /*
