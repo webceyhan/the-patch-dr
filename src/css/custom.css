@@ -399,14 +399,6 @@ a.navbar-brand .light {
     .phone_body a img {
         width: 25px !important;
     }
-    #video-box {
-        padding: 0 !important;
-        margin-top: 35px;
-    }
-    section .parallax {
-        /*background-position: left !important;*/
-    }
-
 }
 
 /* Button Style --------------------------- */
@@ -591,10 +583,6 @@ a.navbar-brand .light {
 .phone_body a:hover img.rollover {
     opacity: 1;
 }
-#about .about-section {
-    padding-bottom: 60px;
-    padding-top: 80px;
-}
 
 
 @media (min-width: 767px) {
@@ -619,44 +607,13 @@ a.navbar-brand .light {
     }
 }
 
-/* About Section ------------- */
-.about-section {
-    width: 100%;
-    color: #fff;
-    background: url(/images/painters_melbourne.jpg) center center no-repeat #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
-#video-box {
-    padding: 6px 3px;
-    /*padding: 10px 10px 6px;*/
-    /*background-color: #E3E3E3;    */
-    /*border-radius: 4px;    */
-    margin-bottom: 20px;
-}
 
 .light_grey {
     color: #a8a8a8 !important;
 }
 .grey {
     color: #5e5f5f !important;
-}
-
-.about-section p {
-    color: #fff;
-    font-weight: 300;
-    line-height: 1.55;
-    padding-right: 28px;
-}
-
-#about h2 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.25;
-    margin-bottom: 20px;
 }
 
 /* Form Validation -------------------- */
@@ -735,9 +692,7 @@ form .messagebox .bg-danger {
     .notice-head {
         text-align: center;
     }
-    .about-section p {
-        padding-right: 0;
-    }
+
     .title.light_grey {
         color: #a8a8a8 !important;
     }
@@ -868,10 +823,6 @@ form .form-control.captcha {
     display: none !important;
 }
 @media (max-width: 436px) {
-    .about-section {
-        background: url(/images/TPD_About_BG_Pic_Mobile.jpg) no-repeat #000000;
-    }
-
     blockquote {
         min-height: 325px;
     }
@@ -890,10 +841,7 @@ form .form-control.captcha {
         display: inline-block !important;
     }
 
-    .about_mobile {
-        margin-bottom: 25px;
-        margin-top: 25px;
-    }
+
 }
 
 /*
