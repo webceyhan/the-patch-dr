@@ -47,39 +47,6 @@ $(function () {
     });
 });
 
-/* Work portfolio Grid------------------ */
-// $(function () {
-//     /* initialize shuffle plugin */
-//     var $grid = $('#portfoliogrid');
-
-//     $grid.shuffle({
-//         itemSelector: '.portfolio-item', // the selector for the items in the grid
-//     });
-
-//     /* reshuffle when user clicks a filter item */
-//     $('#filters a').click(function (e) {
-//         e.preventDefault();
-
-//         // set active class
-//         $('#filters a').removeClass('active');
-//         $(this).addClass('active');
-
-//         // get group name from clicked item
-//         var groupName = $(this).attr('data-group');
-//         //alert(groupName);
-//         // reshuffle grid
-//         $grid.shuffle('shuffle', groupName);
-//     });
-// });
-
-/* Work Portfolio Gallery -------------- */
-$(document).ready(function () {
-    $("a[data-rel^='prettyPhoto']").prettyPhoto({ hook: 'data-rel' });
-    setTimeout(function () {
-        $('#filters li a.active').click();
-    }, 2000); //little patch for grid height
-});
-
 /* Form Captcha Security ---------------- */
 $(function () {
     $('.captcha').realperson({
