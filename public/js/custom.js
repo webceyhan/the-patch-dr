@@ -6,11 +6,6 @@ Version:    1.0
 Last change:    20/02/2015
 ------------------------------------------*/
 
-/* From Select ------------------------- */
-$(function () {
-    $('select').selectize();
-});
-
 /* Smooth Scrolling -------------------- */
 $(function () {
     $('a.page-scroll').bind('click', function (event) {

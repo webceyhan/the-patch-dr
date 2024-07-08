@@ -319,10 +319,6 @@ form .messagebox .bg-danger {
 
 /* Quote Form -------------------- */
 
-.selectize-dropdown .active {
-    background-color: #eb5e54;
-}
-
 .title.light_grey {
     color: #b7b7b7 !important;
 }
