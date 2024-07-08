@@ -48,7 +48,7 @@ onMounted(() => {
         >
           <FaIcon name="bars" />
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">
+        <a class="navbar-brand" href="#page-top">
           <img src="/images/logo-navbar-dark.png" class="black_logo" />
           <img src="/images/logo-navbar.png" class="white_logo" />
         </a>
@@ -62,7 +62,7 @@ onMounted(() => {
           </li>
 
           <li v-for="link in LINKS">
-            <a class="page-scroll" :href="link.href">{{ link.title }}</a>
+            <a :href="link.href">{{ link.title }}</a>
           </li>
         </ul>
       </div>

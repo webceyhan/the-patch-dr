@@ -4,7 +4,7 @@ import FaIcon from "./FaIcon.vue";
 
 <template>
   <div class="scroll-to-top affix" data-spy="affix" data-offset-top="200">
-    <a href="#page-top" class="page-scroll">
+    <a href="#page-top">
       <FaIcon name="arrow-up" />
     </a>
   </div>
