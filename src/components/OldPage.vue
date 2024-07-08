@@ -10,22 +10,16 @@ import CallActionSection from "./CallActionSection.vue";
 import AboutSection from "./AboutSection.vue";
 import WelcomeSection from "./WelcomeSection.vue";
 import Navbar from "./Navbar.vue";
+import Preloader from "./Preloader.vue";
 </script>
 
 <template>
   <div id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="spinner">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+    <Preloader />
 
     <!-- Backstretch Carousel -->
     <div class="backstretch-carousel"></div>
-    
+
     <Navbar />
 
     <WelcomeSection id="welcome" />
