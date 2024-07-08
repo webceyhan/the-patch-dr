@@ -33,9 +33,6 @@ blockquote {
     margin: 20px 0 20px;
     padding: 10px 20px;
 }
-.text-shadow {
-    text-shadow: 1px 1px 2px #b0b0b0;
-}
 ::-moz-selection,
 ::selection {
     text-shadow: none;
