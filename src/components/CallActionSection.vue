@@ -15,7 +15,7 @@
         <div class="col-md-7 col-md-offset-5">
           <h1>
             <span class="light_grey">SNAP, </span
-            ><span class="common-text-color">TEXT, </span><span class="grey">QUOTE.</span>
+            ><span class="text-primary">TEXT, </span><span class="grey">QUOTE.</span>
           </h1>
 
           <p>

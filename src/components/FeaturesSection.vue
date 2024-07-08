@@ -64,7 +64,7 @@ const SERVICES: Service[] = [
         <div class="row">
           <div class="col-sm-12 text-center">
             <h2 class="title">OUR COMPLETE LIST OF SERVICES</h2>
-            <h4 class="common-text-color">QUALITY COMES NATURALLY WITH PASSION</h4>
+            <h4 class="text-primary">QUALITY COMES NATURALLY WITH PASSION</h4>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ const SERVICES: Service[] = [
           >
             <div class="features-item">
               <h3 class="features-title">
-                <span class="common-text-color"> 0{{ index + 1 }}. </span>
+                <span class="text-primary"> 0{{ index + 1 }}. </span>
                 {{ service.title }}
               </h3>
 
