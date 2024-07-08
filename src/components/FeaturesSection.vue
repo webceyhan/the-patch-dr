@@ -57,7 +57,7 @@ const SERVICES: Service[] = [
   <section>
     <div class="content-section parallax">
       <div id="side-logo-wrapper">
-        <img src="/images/side-logo.png" />
+        <img src="/images/logo-aside.png" />
       </div>
 
       <div class="container">

@@ -49,8 +49,8 @@ onMounted(() => {
           <FaIcon name="bars" />
         </button>
         <a class="navbar-brand page-scroll" href="#page-top">
-          <img src="/images/navbar-logo-dark.png" class="black_logo" />
-          <img src="/images/navbar-logo.png" class="white_logo" />
+          <img src="/images/logo-navbar-dark.png" class="black_logo" />
+          <img src="/images/logo-navbar.png" class="white_logo" />
         </a>
       </div>
 
