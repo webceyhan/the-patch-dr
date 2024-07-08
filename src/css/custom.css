@@ -214,40 +214,6 @@ section .parallax {
     outline: 0;
 }
 
-@-webkit-keyframes pulse {
-    0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {
-    0 {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 .light_grey {
     color: #a8a8a8 !important;
 }
@@ -294,25 +260,3 @@ section .parallax {
         display: inline-block !important;
     }
 }
-
-/*
-     FILE ARCHIVED ON 17:34:18 Mar 04, 2019 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 13:33:50 Jun 10, 2020.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  PetaboxLoader3.datanode: 189.747 (4)
-  captures_list: 368.464
-  RedisCDXSource: 9.728
-  PetaboxLoader3.resolve: 204.568 (2)
-  esindex: 0.013
-  LoadShardBlock: 343.299 (3)
-  exclusion.robots.policy: 0.11
-  load_resource: 92.051
-  CDXLines.iter: 12.491 (3)
-  exclusion.robots: 0.118
-*/
