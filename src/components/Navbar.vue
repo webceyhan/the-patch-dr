@@ -8,6 +8,7 @@ interface Link {
 }
 
 const LINKS: Link[] = [
+  { href: "#page-top", title: "hidden" },
   { href: "#service", title: "Snapshot" },
   { href: "#about", title: "About" },
   { href: "#call-action", title: "STQ" },
@@ -56,12 +57,7 @@ onMounted(() => {
 
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
         <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-
-          <li v-for="link in LINKS">
+          <li v-for="(link, index) in LINKS" :class="{ hidden: index === 0 }">
             <a :href="link.href">{{ link.title }}</a>
           </li>
         </ul>
@@ -135,7 +131,7 @@ onMounted(() => {
   background: 0 0;
 }
 .navbar-nav li.active {
-  outline: nonte;
+  outline: none;
   background-color: transparent;
 }
 .navbar-nav li a {

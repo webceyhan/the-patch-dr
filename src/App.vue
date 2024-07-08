@@ -14,10 +14,10 @@ import PageScroller from "./components/PageScroller.vue";
 </script>
 
 <template>
-  <div id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="page-top" data-spy="scroll" data-target="#navbar">
     <Preloader />
 
-    <Navbar />
+    <Navbar id="navbar" />
 
     <WelcomeSection id="welcome" />
 
@@ -45,5 +45,12 @@ import PageScroller from "./components/PageScroller.vue";
 #page-top {
   width: 100%;
   height: 100%;
+
+  /* 
+  ScrollSpy works when you set below properties but it breaks the sticky navbar.
+  TODO: replace scrollspy with native vue / tailwindcss solution 
+  */
+  /* position: relative; */
+  /* overflow-y: scroll; */
 }
 </style>
