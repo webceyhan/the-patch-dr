@@ -7,7 +7,7 @@
             <div class="col-md-10 col-md-offset-1">
               <h1 class="brand-heading">
                 SURGERY<span class="friction">,</span> FOR
-                <span class="common-text-color">SPACES.</span>
+                <span class="text-primary">SPACES.</span>
               </h1>
 
               <p class="welcome-text">

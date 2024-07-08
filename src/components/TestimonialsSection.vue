@@ -39,7 +39,7 @@ const ITEMS: Testimonial[] = [
       <div class="container">
         <h2 class="section-title grey">
           Hear From Our
-          <span class="common-text-color">Happy Clients</span>
+          <span class="text-primary">Happy Clients</span>
         </h2>
 
         <FaIcon name="quote-left" style="width: 32px; height: 32px" />
