@@ -54,7 +54,6 @@ header {
   -o-background-size: cover;
 }
 header .title {
-  font-family: Roboto, sans-serif;
   text-transform: none;
   font-weight: 100 !important;
   letter-spacing: -0.5px;
