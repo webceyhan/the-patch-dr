@@ -254,80 +254,10 @@ section .parallax {
 .grey {
     color: #5e5f5f !important;
 }
-
-/* Form Validation -------------------- */
-i.form-control-feedback {
-    padding: 8px;
-}
-
-.has-success i.form-control-feedback {
-    color: #eb5e54;
-}
-
-.has-error i.form-control-feedback {
-    color: #e51d25;
-}
-
-/*.has-error .checkbox,  .has-error .checkbox-inline,  .has-error .control-label,  .has-error .help-block,  .has-error .radio,  .has-error .radio-inline,  .has-error.checkbox label,  .has-error.checkbox-inline label,  .has-error.radio label,  .has-error.radio-inline label  {    
-    color:  #e51d25;    
-}
-*/
-
-.has-success {
-    color: #eb5e54;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.has-error {
-    color: #e51d25;
-    font-weight: 300;
-    font-style: italic;
-}
-
-label.has-error {
-    width: 100%;
-    text-align: right;
-}
-
-.form-control.has-success {
-    background: url(/images/icon-ok.png) no-repeat right center;
-    color: #eb5e54;
-    border-color: #eb5e54 !important;
-}
-
-.form-control.has-error {
-    background: url(/images/icon-fail.png) no-repeat right center;
-    color: #e51d25;
-    border-color: #e51d25 !important;
-}
-form .messagebox {
-    margin-top: 10px;
-}
-
-form .messagebox .bg-success {
-    background-color: #2fba78;
-    background-size: cover;
-    color: #fff;
-}
-
-form .messagebox .bg-danger {
-    background-color: #e51d25;
-    background-size: cover;
-    color: #fff;
-}
-
-/* Quote Form -------------------- */
-
 .title.light_grey {
     color: #b7b7b7 !important;
 }
-
 @media (max-width: 767px) {
-    .notice-head {
-        text-align: center;
-    }
-
     .title.light_grey {
         color: #a8a8a8 !important;
     }
