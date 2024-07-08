@@ -23,18 +23,6 @@ $(function () {
     });
 });
 
-/* Form Captcha Security ---------------- */
-$(function () {
-    $('.captcha').realperson({
-        length: 4, // Number of characters to use
-        regenerate: 'Click to change', // Instruction text to regenerate
-        hashName: '{n}B4429CD97EAEA9CFBBFBDFCD46554', // Name of the hash value field to compare with,
-        // use {n} to substitute with the original field name
-        dot: '*', // The character to use for the dot patterns
-        chars: $.realperson.alphanumeric, // The characters allowed */
-    });
-});
-
 /* Process Form ------------------------ */
 
 // prepare the form when the DOM is ready
