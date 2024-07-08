@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import FaIcon from "./FaIcon.vue";
 import ServicesSection from "./ServicesSection.vue";
 import FeaturesSection from "./FeaturesSection.vue";
 import PortfolioSection from "./PortfolioSection.vue";
@@ -11,6 +10,7 @@ import AboutSection from "./AboutSection.vue";
 import WelcomeSection from "./WelcomeSection.vue";
 import Navbar from "./Navbar.vue";
 import Preloader from "./Preloader.vue";
+import PageScroller from "./PageScroller.vue";
 </script>
 
 <template>
@@ -40,12 +40,6 @@ import Preloader from "./Preloader.vue";
 
     <FooterSection />
 
-    <!-- Scroll to Top Start -->
-    <div class="scroll-to-top affix" data-spy="affix" data-offset-top="200">
-      <a href="#page-top" class="page-scroll">
-        <FaIcon name="arrow-up" />
-      </a>
-    </div>
-    <!-- Scroll to Top End -->
+    <PageScroller />
   </div>
 </template>
