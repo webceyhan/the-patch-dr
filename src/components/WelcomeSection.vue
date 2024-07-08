@@ -40,6 +40,11 @@
 </template>
 
 <style scoped>
+section {
+  width: 100%;
+  height: auto;
+}
+
 .welcome {
   display: table;
   width: 100%;
@@ -114,7 +119,18 @@
   opacity: 1;
 }
 
+@media (max-width: 767px) {
+  .phone_body a {
+    font-size: 30px;
+    line-height: 27px;
+  }
+  .phone_body a img {
+    width: 25px !important;
+  }
+}
+
 @media (min-width: 767px) {
+  section,
   .welcome {
     height: 100%;
     padding: 0;
@@ -133,16 +149,6 @@
     margin-bottom: 50px;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.28);
-  }
-}
-
-@media (max-width: 767px) {
-  .phone_body a {
-    font-size: 30px;
-    line-height: 27px;
-  }
-  .phone_body a img {
-    width: 25px !important;
   }
 }
 </style>

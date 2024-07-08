@@ -40,3 +40,10 @@ import PageScroller from "./components/PageScroller.vue";
     <PageScroller />
   </div>
 </template>
+
+<style scoped>
+#page-top {
+  width: 100%;
+  height: 100%;
+}
+</style>
