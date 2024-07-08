@@ -333,50 +333,6 @@ form .messagebox .bg-danger {
     }
 }
 
-/* Real Person Captcha Security ----------- */
-.realperson-challenge {
-    display: block;
-    float: left;
-    width: 50%;
-    color: #eb5e54;
-}
-
-.quote-form .realperson-challenge {
-    color: #b1b1b1;
-}
-
-.realperson-challenge: hover {
-    cursor: pointer;
-}
-
-form .form-control.captcha {
-    width: 50%;
-}
-
-.realperson-text {
-    font-family: 'Courier New', monospace;
-    font-size: 6px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    line-height: 3px;
-}
-
-.realperson-regen {
-    color: #ffffff;
-    padding-top: 1px;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.realperson-disabled {
-    opacity: 0.5;
-    filter: Alpha(Opacity=50);
-}
-
-.realperson-disabled .realperson-regen {
-    cursor: default;
-}
-
 .mobile_text {
     display: none;
 }
