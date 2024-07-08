@@ -6,7 +6,7 @@
           <h2>
             FROM THE SMALLEST PATCH REPAIR TO THE WHOLE HOUSE RENO,
             <br />
-            <span class="common-text-color">THE PATCH DR. </span>
+            <span class="text-primary">THE PATCH DR. </span>
             HAS YOU COVERED.
           </h2>
 

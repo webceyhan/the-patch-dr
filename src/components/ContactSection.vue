@@ -61,7 +61,7 @@ const SOCIAL_LINKS: Link[] = [
         <div class="text-center">
           <h2 class="title">Get In Touch</h2>
 
-          <h4 class="common-text-color">
+          <h4 class="text-primary">
             Connect with us via email or phone, or check out our online profiles
           </h4>
         </div>
