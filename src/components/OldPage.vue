@@ -17,9 +17,6 @@ import PageScroller from "./PageScroller.vue";
   <div id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <Preloader />
 
-    <!-- Backstretch Carousel -->
-    <div class="backstretch-carousel"></div>
-
     <Navbar />
 
     <WelcomeSection id="welcome" />
