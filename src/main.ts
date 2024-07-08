@@ -1,3 +1,4 @@
+import './styles.css';
 import './css/bootstrap.min.css';
 import './css/prettyPhoto.css';
 import './css/animate.css';
