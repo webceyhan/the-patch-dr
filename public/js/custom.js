@@ -6,11 +6,6 @@ Version:    1.0
 Last change:    20/02/2015
 ------------------------------------------*/
 
-/* Preloader ---------------------------- */
-$(window).load(function () {
-    $('.preloader').fadeOut(1000);
-});
-
 /* From Select ------------------------- */
 $(function () {
     $('select').selectize();
