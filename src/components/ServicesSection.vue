@@ -40,7 +40,7 @@ const SERVICES: Service[] = [
                 loading="lazy"
               />
 
-              <figcaption class="common-bg-color">
+              <figcaption class="bg-primary">
                 <h4>{{ service.title }}</h4>
               </figcaption>
             </figure>
