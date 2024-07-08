@@ -45,10 +45,6 @@ img::-moz-selection {
     background: 0 0;
 }
 
-.content-section {
-    padding-top: 80px;
-}
-
 .common-text-color {
     color: #ea5d56;
 }
@@ -227,10 +223,7 @@ section .parallax {
     }
 }
 
-/* Desktop */
-@media (min-width: 767px) {
-    .content-section {
-        padding-top: 100px;
-        padding-bottom: 50px;
-    }
+/* UTILS ******************************************************************************************/
+.content-section {
+    @apply pt-20 md:pt-24 md:pb-14;
 }
