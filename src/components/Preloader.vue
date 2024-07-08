@@ -1,84 +1,27 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
+
+const isLoading = ref(true);
 
 onMounted(() => {
-  const $ = (window as any).$;
-
-  $(".preloader").fadeOut(1000);
+  document.onreadystatechange = () => {
+    if (document.readyState == "complete") {
+      isLoading.value = false;
+    }
+  };
 });
 </script>
 
 <template>
-  <div class="preloader">
-    <div class="spinner">
-      <span></span>
-      <span></span>
-      <span></span>
+  <Transition
+    leave-to-class="opacity-0"
+    leave-active-class="transition ease-out duration-1000"
+  >
+    <div
+      v-if="isLoading"
+      class="fixed inset-0 bg-base-content/95 flex justify-center items-center"
+    >
+      <span class="loading loading-dots w-1/12 text-base-100" />
     </div>
-  </div>
+  </Transition>
 </template>
-
-<style scoped>
-.preloader,
-.preloader > .spinner {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.preloader {
-  position: fixed;
-  background-color: #151515;
-  z-index: 9999999;
-}
-.preloader > .spinner {
-  position: absolute;
-  width: 100%;
-  height: 15px;
-  margin: auto;
-  text-align: center;
-}
-.preloader > .spinner > span {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  display: inline-block;
-  background: gray;
-  -webkit-animation: spinner-color 1.2s infinite ease-in-out;
-  -o-animation: spinner-color 1.2s infinite ease-in-out;
-  animation: spinner-color 1.2s infinite ease-in-out;
-}
-.preloader > .spinner > span:first-child {
-  -webkit-animation-delay: -0.2s;
-  animation-delay: -0.2s;
-}
-.preloader > .spinner > span:last-child {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-@-webkit-keyframes spinner-color {
-  0% {
-    background: #555;
-  }
-  40% {
-    background: #fff;
-  }
-  100%,
-  80% {
-    background: #555;
-  }
-}
-@keyframes spinner-color {
-  0% {
-    background: #555;
-  }
-  40% {
-    background: #fff;
-  }
-  100%,
-  80% {
-    background: #555;
-  }
-}
-</style>
