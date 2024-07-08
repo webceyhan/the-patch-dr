@@ -9,6 +9,7 @@ import FooterSection from "./FooterSection.vue";
 import CallActionSection from "./CallActionSection.vue";
 import AboutSection from "./AboutSection.vue";
 import WelcomeSection from "./WelcomeSection.vue";
+import Navbar from "./Navbar.vue";
 </script>
 
 <template>
@@ -24,58 +25,9 @@ import WelcomeSection from "./WelcomeSection.vue";
 
     <!-- Backstretch Carousel -->
     <div class="backstretch-carousel"></div>
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-main-collapse"
-          >
-            <FaIcon name="bars" />
-          </button>
-          <a class="navbar-brand page-scroll" href="#page-top">
-            <img src="/images/TPD_Logo On Black.png" class="black_logo" />
-            <img src="/images/TPD_Logo On White.png" class="white_logo" />
-          </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden"><a href="#page-top"></a></li>
-            <li class="active">
-              <a class="page-scroll" href="#service">Snapshot</a>
-            </li>
-            <li class="">
-              <a class="page-scroll" href="#about">About</a>
-            </li>
-            <li class="">
-              <a class="page-scroll" href="#call-action">STQ</a>
-            </li>
-            <li class="">
-              <a class="page-scroll" href="#features">Services</a>
-            </li>
-            <li class="">
-              <a class="page-scroll" href="#portfolio">Gallery</a>
-            </li>
-            <li class="">
-              <a class="page-scroll" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="">
-              <a class="page-scroll" href="#contact">Connect</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
-
     
+    <Navbar />
+
     <WelcomeSection id="welcome" />
 
     <ServicesSection id="service" />
