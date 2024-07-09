@@ -3,6 +3,7 @@ import { fontFamily } from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'selector',
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
         extend: {
@@ -14,7 +15,7 @@ export default {
     plugins: [daisyui],
     daisyui: {
         themes: ['light'],
-        darkTheme: 'dark',
+        darkTheme: 'light',
         logs: false,
     },
 };
