@@ -1,21 +1,21 @@
 <template>
-  <section>
-    <header>
-      <div class="container">
-        <div class="text-center">
-          <h2 class="title">The Home Surgery Specialist.</h2>
-        </div>
-      </div>
+  <section class="bg-primary text-base-100 relative">
+    <header class="container mx-auto text-center">
+      <h1 class="text-4xl py-5">The Home Surgery Specialist.</h1>
     </header>
 
-    <div class="content-section">
-      <img src="/images/call-action-section-bg.jpg" class="img-responsive my_mobile" />
+    <img
+      class="md:absolute bottom-0 right-0 md:max-w-md md:opacity-40"
+      src="/images/call-action-section-bg.jpg"
+    />
 
-      <div class="container">
-        <div class="col-md-7 col-md-offset-5">
-          <h1>
-            <span class="light_grey">SNAP, </span
-            ><span class="text-primary">TEXT, </span><span class="grey">QUOTE.</span>
+    <section class="hero bg-base-100 text-base-content">
+      <div class="hero-content py-10">
+        <div class="max-w-2xl flex flex-col gap-8">
+          <h1 class="text-6xl font-bold">
+            <span class="text-neutral-400">SNAP, </span>
+            <span class="text-primary">TEXT, </span>
+            <span class="text-neutral-600">QUOTE.</span>
           </h1>
 
           <p>
@@ -33,102 +33,14 @@
 
           <p>Because life wasnʼt meant to be complicated.</p>
 
-          <h3 class="phone_number">
-            <a href="tel:0422%20782%20198">0422 782 198</a>
-          </h3>
+          <a
+            href="tel:0422782198"
+            class="text-5xl hover:text-primary transition-all duration-300"
+          >
+            0422 782 198
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   </section>
 </template>
-
-<style scoped>
-header {
-  width: 100%;
-  color: #fff;
-  padding: 15px 0 8px;
-  background-color: #eb5e54;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-header .title {
-  text-transform: none;
-  font-weight: 100 !important;
-  letter-spacing: -0.5px;
-  font-size: 38px;
-  text-shadow: none;
-}
-
-@media (max-width: 436px) {
-  header .title {
-    font-size: 33px;
-  }
-}
-
-.content-section {
-  color: #5e5f5f;
-  background: url(/images/call-action-section-bg.jpg) no-repeat bottom left;
-  background-size: 38%;
-}
-.content-section h1 {
-  margin-top: -5px;
-  font-size: 65px;
-  margin-bottom: 27px;
-  letter-spacing: -3px;
-}
-.content-section p {
-  font-size: 16px;
-  line-height: 1.3;
-}
-.content-section .phone_number {
-  font-size: 58px;
-  margin-bottom: 40px;
-  font-weight: 300;
-  margin-top: 31px;
-}
-.content-section a {
-  color: #888888;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-.content-section a:hover {
-  color: #eb5e54;
-}
-
-@media (max-width: 436px) {
-  .content-section {
-    padding-top: 20px;
-  }
-  .content-section .phone_number {
-    font-size: 43px;
-  }
-}
-
-@media (max-width: 767px) {
-  .content-section {
-    background: none !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .content-section .col-md-offset-5 {
-    margin-left: 38.666667%;
-  }
-}
-
-.my_mobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .my_mobile {
-    display: block;
-    margin-bottom: 40px;
-    width: 100%;
-  }
-}
-</style>
