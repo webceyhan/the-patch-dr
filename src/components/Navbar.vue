@@ -22,21 +22,6 @@ const isMenuOpen = ref(false);
 const activeHash = ref(location.hash);
 
 onMounted(() => {
-  // TODO: replace scrollspy with native vue / tailwindcss solution
-  // move it to the App component and use a reactive variable
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        activeHash.value = `#${entry.target.id}`;
-      }
-    });
-  });
-  // observe sections for scrollspy
-  LINKS.forEach(({ href }) => {
-    const section = document.querySelector(href);
-    if (section) observer.observe(section);
-  });
-
   // update navbar styling on scroll
   window.onscroll = () => {
     const { body, documentElement } = document;
