@@ -54,104 +54,32 @@ const SERVICES: Service[] = [
 </script>
 
 <template>
-  <section>
-    <div class="content-section parallax">
-      <div id="side-logo-wrapper">
-        <img src="/images/logo-aside.png" />
-      </div>
+  <section
+    class="hero bg-cover bg-center bg-no-repeat text-base-100 py-10 relative"
+    style="background-image: url('/images/features-section-bg.jpg')"
+  >
+    <img src="/images/logo-aside.png" class="absolute right-0 max-w-xs" />
 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2 class="title">OUR COMPLETE LIST OF SERVICES</h2>
-            <h4 class="text-primary">QUALITY COMES NATURALLY WITH PASSION</h4>
-          </div>
-        </div>
+    <div class="hero-content">
+      <div class="max-w-2xl space-y-8">
+        <header class="text-center">
+          <h1 class="text-3xl font-bold">OUR COMPLETE LIST OF SERVICES</h1>
+          <h2 class="text-xl text-primary">QUALITY COMES NATURALLY WITH PASSION</h2>
+        </header>
 
-        <div class="row">
-          <div
-            v-for="(service, index) in SERVICES"
-            class="col-sm-12 col-md-5 col-md-offset-1"
-          >
-            <div class="features-item">
-              <h3 class="features-title">
-                <span class="text-primary"> 0{{ index + 1 }}. </span>
-                {{ service.title }}
-              </h3>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-x-32">
+          <div v-for="(service, index) in SERVICES" class="">
+            <h3 class="text-2xl uppercase py-2">
+              <span class="text-primary"> 0{{ index + 1 }}. </span>
+              {{ service.title }}
+            </h3>
 
-              <ul>
-                <li v-for="feature in service.feautures">{{ feature }}</li>
-              </ul>
-            </div>
+            <ul class="list-disc pl-10">
+              <li v-for="feature in service.feautures">{{ feature }}</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-.content-section {
-  width: 100%;
-  color: #fff;
-  background: url(/images/features-section-bg.jpg) center center no-repeat #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  padding-top: 80px;
-  padding-bottom: 23px;
-}
-
-.content-section h4 {
-  font-weight: 500;
-}
-
-#side-logo-wrapper {
-  position: absolute;
-  right: 0;
-  width: 270px;
-  margin-top: -75px;
-}
-
-#side-logo-wrapper img {
-  width: 100%;
-}
-
-.features-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 26px;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
-  letter-spacing: -1px;
-  margin-top: 5px;
-}
-
-.features-item {
-  margin-bottom: 50px;
-}
-
-@media (max-width: 436px) {
-  .content-section {
-    padding-top: 60px;
-    padding-bottom: 10px;
-    background: url(/images/features-section-bg-mobile.jpg) center center no-repeat
-      #000;
-  }
-  .content-section h4 {
-    font-size: 16px;
-  }
-
-  .features-title {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  #side-logo-wrapper {
-    display: none;
-  }
-}
-</style>
