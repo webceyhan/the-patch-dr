@@ -26,79 +26,27 @@ const SERVICES: Service[] = [
 </script>
 
 <template>
-  <section class="container">
-    <div class="row content-section">
-      <div class="col-lg-12">
-        <h2 class="section-title text-center">WHAT WE DO BEST</h2>
+  <section class="container mx-auto p-4 md:py-10">
+    <!-- header -->
+    <header class="text-3xl font-bold text-center text-neutral-400 py-10">
+      WHAT WE DO BEST
+    </header>
 
-        <div class="row">
-          <div v-for="service in SERVICES" class="service-item col-lg-3 col-sm-6">
-            <figure>
-              <img
-                :src="`/images/services/${service.id}.png`"
-                :alt="service.title"
-                loading="lazy"
-              />
-
-              <figcaption class="bg-primary">
-                <h4>{{ service.title }}</h4>
-              </figcaption>
-            </figure>
-          </div>
+    <!-- grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- card -->
+      <div v-for="service in SERVICES" class="card bg-primary text-base-100 shadow-xl">
+        <figure>
+          <img
+            :src="`/images/services/${service.id}.png`"
+            :alt="service.title"
+            loading="lazy"
+          />
+        </figure>
+        <div class="card-body py-4">
+          <h2 class="card-title uppercase font-normal">{{ service.title }}</h2>
         </div>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-.content-section {
-  padding-top: 110px;
-}
-
-.section-title {
-  color: #b7b7b7;
-  margin-bottom: 45px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.service-item {
-  margin-bottom: 25px;
-}
-
-figure img {
-  display: block;
-  width: 100%;
-  border-radius: 4px 4px 0 0;
-}
-figcaption {
-  padding: 13px 22px;
-  text-align: left;
-  border-radius: 0 0 4px 4px;
-}
-figcaption h4 {
-  font-weight: 400;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0px;
-  font-size: 20px;
-}
-figcaption p {
-  margin: 0;
-}
-
-@media (max-width: 767px) {
-  .section-title {
-    color: #a8a8a8;
-  }
-}
-
-@media (min-width: 767px) {
-  .content-section {
-    padding-top: 110px;
-    padding-bottom: 50px;
-  }
-}
-</style>
