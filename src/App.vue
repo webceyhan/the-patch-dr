@@ -9,7 +9,6 @@ import CallActionSection from "./components/CallActionSection.vue";
 import FeaturesSection from "./components/FeaturesSection.vue";
 import PortfolioSection from "./components/PortfolioSection.vue";
 import TestimonialsSection from "./components/TestimonialsSection.vue";
-import ContactSection from "./components/ContactSection.vue";
 import FooterSection from "./components/FooterSection.vue";
 import PageScroller from "./components/PageScroller.vue";
 
@@ -48,8 +47,6 @@ onMounted(() => {
     <PortfolioSection id="portfolio" class="spy" />
 
     <TestimonialsSection id="testimonials" class="spy" />
-
-    <ContactSection id="contact" class="spy" />
 
     <FooterSection />
 
