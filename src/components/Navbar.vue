@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useSpy } from "../composables/useSpy";
 import { useScroll } from "../composables/useScroll";
-import { useLocation } from "../composables/useLocation";
 import FaIcon from "./FaIcon.vue";
 
 interface Link {
@@ -20,8 +20,8 @@ const LINKS: Link[] = [
 ];
 
 const isMenuOpen = ref(false);
+const { visibleHash } = useSpy();
 const { wasScrolled } = useScroll(200);
-const activeHash = useLocation().hash;
 </script>
 
 <template>
@@ -48,7 +48,7 @@ const activeHash = useLocation().hash;
             :href="link.href"
             :class="[
               'uppercase px-2 dark:text-base-100/50 dark:hover:text-base-100',
-              { 'text-primary': activeHash === link.href },
+              { 'text-primary': link.href === visibleHash },
             ]"
           >
             {{ link.title }}
