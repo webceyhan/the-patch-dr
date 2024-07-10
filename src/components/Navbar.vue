@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+import { useLocation } from "../composables/useLocation";
 import FaIcon from "./FaIcon.vue";
 
 interface Link {
@@ -19,7 +20,7 @@ const LINKS: Link[] = [
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
-const activeHash = ref(location.hash);
+const activeHash = useLocation().hash;
 
 onMounted(() => {
   // update navbar styling on scroll
@@ -27,11 +28,6 @@ onMounted(() => {
     const { body, documentElement } = document;
     isScrolled.value = body.scrollTop > 50 || documentElement.scrollTop > 50;
   };
-
-  // update active link on hash change
-  window.addEventListener("popstate", () => {
-    activeHash.value = location.hash;
-  });
 });
 </script>
 
