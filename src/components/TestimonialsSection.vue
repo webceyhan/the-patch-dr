@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed, onMounted, ref } from "vue";
 import FaIcon from "./FaIcon.vue";
 
 interface Testimonial {
@@ -27,120 +28,68 @@ const ITEMS: Testimonial[] = [
     name: "Osher Klein",
     location: "St Kilda East",
     review:
-      "Dallas was very quick to respond, and came &amp; completed the job the following day. He did a great job and left our house looking neat and tidy!",
+      "Dallas was very quick to respond, and came & completed the job the following day. He did a great job and left our house looking neat and tidy!",
     avatarUri: "osher-klein.jpg",
   },
 ];
+
+const pauseSlide = ref(false);
+const activeIndex = ref(0);
+const activeItem = computed(() => ITEMS[activeIndex.value]);
+
+onMounted(() => {
+  // slide to next item every 5 seconds
+  setInterval(() => {
+    if (pauseSlide.value) return;
+    activeIndex.value = (activeIndex.value + 1) % ITEMS.length;
+  }, 5000);
+});
 </script>
 
 <template>
-  <section>
-    <div class="content-section text-center">
-      <div class="container">
-        <h2 class="section-title grey">
+  <section class="hero py-10 bg-base-200">
+    <div
+      class="hero-content text-center"
+      @mouseleave="pauseSlide = false"
+      @mouseenter="pauseSlide = true"
+    >
+      <div class="max-w-3xl flex flex-col items-center gap-8">
+        <!-- header -->
+        <h1 class="text-3xl font-bold uppercase">
           Hear From Our
           <span class="text-primary">Happy Clients</span>
-        </h2>
+        </h1>
 
-        <FaIcon name="quote-left" style="width: 32px; height: 32px" />
-        <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div
-              v-for="(item, index) in ITEMS"
-              :class="[
-                'item',
-                {
-                  active: index === 0,
-                  next: index === 1,
-                },
-              ]"
-            >
-              <blockquote>
-                <p>{{ item.review }}</p>
-                <small> {{ item.name }}, {{ item.location }}. </small>
-              </blockquote>
+        <FaIcon name="quote-left" style="width: 48px; height: 48px" />
+
+        <!-- quote box -->
+        <Transition
+          mode="out-in"
+          enter-from-class="translate-x-full "
+          enter-active-class="transition duration-500"
+          leave-to-class="opacity-0"
+          leave-active-class="transition duration-300"
+        >
+          <blockquote class="h-48 md:h-28 space-y-2" :key="activeIndex">
+            <p>{{ activeItem.review }}</p>
+            <small class="text-neutral-500"> {{ activeItem.name }}, {{ activeItem.location }}. </small>
+          </blockquote>
+        </Transition>
+
+        <!-- indicators -->
+        <nav class="flex w-full justify-center gap-8 py-2">
+          <a v-for="(item, index) in ITEMS" :href="`#carousel-item-${index}`">
+            <div class="avatar" @click="activeIndex = index">
+              <div
+                class="ring-offset-base-100 w-20 rounded-full ring ring-offset-2"
+                :class="{ 'ring-primary': index === activeIndex }"
+              >
+                <img :src="`/images/testimonials/${item.avatarUri}`" :alt="item.name" />
+              </div>
             </div>
-          </div>
-
-          <ol class="carousel-indicators">
-            <li
-              v-for="(item, index) in ITEMS"
-              data-target="#testimonials-carousel"
-              :data-slide-to="index"
-              :class="{ active: index === 0 }"
-            >
-              <img
-                :src="`/images/testimonials/${item.avatarUri}`"
-                class="img-circle"
-                :alt="item.name"
-              />
-            </li>
-          </ol>
-        </div>
+          </a>
+        </nav>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-.content-section {
-  padding-top: 80px;
-  padding-bottom: 40px;
-  width: 100%;
-  background-color: #eee;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.carousel-control {
-  background: 0;
-}
-
-.carousel-indicators {
-  position: inherit;
-  margin: 0;
-  left: auto;
-  width: 100%;
-  bottom: auto;
-  margin-bottom: 20px;
-}
-.carousel-indicators li {
-  width: auto;
-  height: auto;
-  text-indent: 0;
-  border: 0;
-  border-radius: 60px;
-  padding: 5px;
-  margin: 5px !important;
-  background: #fff;
-  position: relative;
-}
-.carousel-indicators li.active {
-  background: #494949;
-}
-.carousel-indicators li.active:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-bottom-color: #494949;
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  margin-left: -10px;
-}
-.carousel-indicators img {
-  width: 64px;
-  height: 64px;
-}
-
-@media (max-width: 436px) {
-  .content-section {
-    padding-top: 60px;
-    padding-bottom: 20px;
-  }
-}
-</style>
