@@ -1,10 +1,5 @@
-import './styles.css';
-import './css/bootstrap.min.css';
-import './css/prettyPhoto.css';
-import './css/animate.css';
-import './css/custom.css';
-
 import { createApp } from 'vue';
 import App from './App.vue';
+import './styles.css';
 
 createApp(App).mount('#app');
