@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
+import { useScroll } from "../composables/useScroll";
 import { useLocation } from "../composables/useLocation";
 import FaIcon from "./FaIcon.vue";
 
@@ -18,17 +19,9 @@ const LINKS: Link[] = [
   { href: "#contact", title: "Connect" },
 ];
 
-const isScrolled = ref(false);
 const isMenuOpen = ref(false);
+const { wasScrolled } = useScroll(200);
 const activeHash = useLocation().hash;
-
-onMounted(() => {
-  // update navbar styling on scroll
-  window.onscroll = () => {
-    const { body, documentElement } = document;
-    isScrolled.value = body.scrollTop > 50 || documentElement.scrollTop > 50;
-  };
-});
 </script>
 
 <template>
@@ -36,7 +29,7 @@ onMounted(() => {
     role="navigation"
     :class="[
       'navbar fixed top-0 z-[9999] bg-base-100 dark:md:bg-transparent',
-      { dark: !isScrolled },
+      { dark: !wasScrolled },
     ]"
   >
     <!-- logo -->
