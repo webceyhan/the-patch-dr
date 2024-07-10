@@ -1,15 +1,7 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { usePage } from "../composables/usePage";
 
-const isLoading = ref(true);
-
-onMounted(() => {
-  document.onreadystatechange = () => {
-    if (document.readyState == "complete") {
-      isLoading.value = false;
-    }
-  };
-});
+const { isLoading } = usePage();
 </script>
 
 <template>
