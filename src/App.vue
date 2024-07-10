@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
+import { useSpy } from "./composables/useSpy";
 import Navbar from "./components/Navbar.vue";
 import Preloader from "./components/Preloader.vue";
 import WelcomeSection from "./components/WelcomeSection.vue";
@@ -13,18 +14,7 @@ import FooterSection from "./components/FooterSection.vue";
 import PageScroller from "./components/PageScroller.vue";
 
 onMounted(() => {
-  // update active hash on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        location.hash = `#${entry.target.id}`;
-      }
-    });
-  });
-
-  // observe sections for scrollspy
-  const spySections = document.querySelectorAll(".spy");
-  spySections.forEach((section) => observer.observe(section));
+  useSpy().observe();
 });
 </script>
 
