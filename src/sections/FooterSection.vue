@@ -2,6 +2,7 @@
 import { COMPANY } from "../data/company";
 import { CONTACT_LINKS, SOCIAL_LINKS } from "../data/contact";
 import Icon from "../components/Icon.vue";
+import SocialLink from "../components/SocialLink.vue";
 </script>
 
 <template>
@@ -36,14 +37,11 @@ import Icon from "../components/Icon.vue";
     <!-- social links -->
     <nav>
       <div class="grid grid-flow-col gap-4">
-        <a
+        <SocialLink
           v-for="link in SOCIAL_LINKS"
-          :href="link.href"
-          target="_blank"
-          class="grayscale hover:grayscale-0 transition-all duration-300"
-        >
-          <img class="size-14" :src="`/images/social/${link.icon}.png`" />
-        </a>
+          :href="link.href!"
+          :imageUri="`/images/social/${link.icon}.png`"
+        />
       </div>
     </nav>
 

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SocialLink from "../components/SocialLink.vue";
 import { COMPANY } from "../data/company";
 </script>
 
@@ -21,17 +22,11 @@ import { COMPANY } from "../data/company";
           in touch with us for a free quote today.
         </p>
 
-        <a :href="`tel:${COMPANY.phone}`" class="group inline-flex items-center gap-3">
-          <img
-            src="/images/social/phone.png"
-            class="size-7 md:size-8 grayscale group-hover:grayscale-0 transition-all duration-300"
-          />
-          <span
-            class="text-3xl md:text-4xl group-hover:text-primary transition-all duration-300"
-          >
-            {{ COMPANY.phone }}
-          </span>
-        </a>
+        <SocialLink
+          :label="COMPANY.phone"
+          :href="`tel:${COMPANY.phone}`"
+          :imageUri="`/images/social/phone.png`"
+        />
       </div>
     </div>
   </section>
