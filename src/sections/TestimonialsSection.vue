@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { TESTIMONIALS } from "../data/testimonial";
 import { useSlider } from "../composables/useSlider";
+import Avatar from "../components/Avatar.vue";
 import Icon from "../components/Icon.vue";
 
 const {
@@ -46,20 +47,13 @@ const {
 
         <!-- indicators -->
         <nav class="flex w-full justify-center gap-8 py-2">
-          <div
-            class="avatar"
+          <Avatar
             v-for="(item, index) in TESTIMONIALS"
             @click="nextSlide(index)"
-          >
-            <div
-              :class="[
-                'ring-offset-base-100 w-20 rounded-full ring ring-offset-2 cursor-pointer',
-                { 'ring-primary': index === activeIndex },
-              ]"
-            >
-              <img :src="`/images/testimonials/${item.avatarUri}`" :alt="item.name" />
-            </div>
-          </div>
+            :src="`/images/testimonials/${item.avatarUri}`"
+            :active="index === activeIndex"
+            :alt="item.name"
+          />
         </nav>
       </div>
     </div>
