@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TESTIMONIALS } from "../data";
+import { TESTIMONIALS } from "../data/testimonial";
 import { useSlider } from "../composables/useSlider";
 import Icon from "../components/Icon.vue";
 

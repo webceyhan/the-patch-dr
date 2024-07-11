@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { COMPANY, CONTACT_LINKS, SOCIAL_LINKS } from "../data";
+import { COMPANY } from "../data/company";
+import { CONTACT_LINKS, SOCIAL_LINKS } from "../data/contact";
 import Icon from "../components/Icon.vue";
 </script>
 
