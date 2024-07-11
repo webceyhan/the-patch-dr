@@ -1,28 +1,5 @@
 <script setup lang="ts">
-interface Service {
-  id: string;
-  title: string;
-}
-
-const SERVICES: Service[] = [
-  {
-    id: "repairs",
-    title: "Plaster Repairs",
-  },
-  {
-    id: "plastering",
-    title: "Plastering",
-  },
-
-  {
-    id: "consultancy",
-    title: "Consultancy",
-  },
-  {
-    id: "painting",
-    title: "Painting",
-  },
-];
+import { SERVICES } from "../data";
 </script>
 
 <template>

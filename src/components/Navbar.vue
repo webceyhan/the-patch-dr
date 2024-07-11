@@ -1,23 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { NAV_LINKS } from "../data";
 import { useSpy } from "../composables/useSpy";
 import { useScroll } from "../composables/useScroll";
 import FaIcon from "./FaIcon.vue";
-
-interface Link {
-  href: string;
-  title: string;
-}
-
-const LINKS: Link[] = [
-  { href: "#service", title: "Snapshot" },
-  { href: "#about", title: "About" },
-  { href: "#call-action", title: "STQ" },
-  { href: "#features", title: "Services" },
-  { href: "#portfolio", title: "Gallery" },
-  { href: "#testimonials", title: "Testimonials" },
-  { href: "#contact", title: "Connect" },
-];
 
 const isMenuOpen = ref(false);
 const { visibleHash } = useSpy();
@@ -43,7 +29,7 @@ const { wasScrolled } = useScroll(200);
     <!-- desktop menu -->
     <div class="navbar-center max-md:hidden">
       <ul class="menu menu-horizontal">
-        <li v-for="link in LINKS">
+        <li v-for="link in NAV_LINKS">
           <a
             :href="link.href"
             :class="[
@@ -51,7 +37,7 @@ const { wasScrolled } = useScroll(200);
               { 'text-primary': link.href === visibleHash },
             ]"
           >
-            {{ link.title }}
+            {{ link.label }}
           </a>
         </li>
       </ul>
@@ -60,9 +46,9 @@ const { wasScrolled } = useScroll(200);
     <!-- mobile menu -->
     <div v-if="isMenuOpen" class="fixed md:hidden inset-x-0 top-14 bg-base-100">
       <ul class="menu w-full p-4" @click="isMenuOpen = false">
-        <li v-for="link in LINKS" class="w-full">
+        <li v-for="link in NAV_LINKS" class="w-full">
           <a :href="link.href" class="uppercase">
-            {{ link.title }}
+            {{ link.label }}
           </a>
         </li>
       </ul>
