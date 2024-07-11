@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { NAV_LINKS } from "../data";
+import { NAV_LINKS } from "../data/app";
 import { useSpy } from "../composables/useSpy";
 import { useScroll } from "../composables/useScroll";
 import Icon from "./Icon.vue";

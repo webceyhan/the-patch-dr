@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import { WORKS, WORK_CATEGORIES } from "../data";
+import { WORKS, WORK_TAGS } from "../data/work";
 import Icon from "../components/Icon.vue";
 
 const filter = ref("all");
@@ -9,7 +9,7 @@ const photos = ref<typeof WORKS[0]["photos"]>([]);
 const filteredWorks = computed(() =>
   filter.value === "all"
     ? WORKS
-    : WORKS.filter((item) => item.categories.includes(filter.value))
+    : WORKS.filter((item) => item.tags.includes(filter.value))
 );
 </script>
 
@@ -22,9 +22,9 @@ const filteredWorks = computed(() =>
 
     <!-- filters -->
     <ul class="menu menu-sm bg-base-200 rounded-box max-h-14 overflow-x-scroll">
-      <li v-for="category in WORK_CATEGORIES">
-        <a :class="{ active: filter === category }" @click.prevent="filter = category">
-          {{ category }}
+      <li v-for="tags in WORK_TAGS">
+        <a :class="{ active: filter === tags }" @click.prevent="filter = tags">
+          {{ tags }}
         </a>
       </li>
     </ul>

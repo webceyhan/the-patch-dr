@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SERVICES } from "../data";
+import { SERVICES } from "../data/service";
 </script>
 
 <template>
