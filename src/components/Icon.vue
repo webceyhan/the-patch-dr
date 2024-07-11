@@ -5,15 +5,8 @@ defineProps<{
 </script>
 
 <template>
-  <svg class="icon">
+  <svg class="fill-current" width="16" height="16">
     <use :xlink:href="`/icons.svg#${name}`" />
   </svg>
 </template>
 
-<style scoped>
-.icon {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-}
-</style>
