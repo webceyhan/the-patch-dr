@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { COMPANY } from "../data";
+</script>
+
 <template>
   <section class="bg-primary text-base-100 relative">
     <header class="container mx-auto text-center">
@@ -34,10 +38,10 @@
           <p>Because life wasnʼt meant to be complicated.</p>
 
           <a
-            href="tel:0422782198"
+            :href="`tel:${COMPANY.phone}`"
             class="text-5xl hover:text-primary transition-all duration-300"
           >
-            0422 782 198
+            {{ COMPANY.phone }}
           </a>
         </div>
       </div>

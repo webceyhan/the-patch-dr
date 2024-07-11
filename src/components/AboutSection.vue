@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { COMPANY } from "../data";
+</script>
+
 <template>
   <section
     class="hero bg-black bg-cover bg-center bg-no-repeat text-base-100 py-10"
@@ -7,11 +11,11 @@
       <div class="max-w-2xl flex flex-col gap-8">
         <h1 class="text-3xl font-bold uppercase">
           From the smallest patch repair to the whole house reno, <br />
-          <span class="text-primary">The Patch Dr.</span> has you covered.
+          <span class="text-primary">{{ COMPANY.name }}</span> has you covered.
         </h1>
 
         <p>
-          At The Patch Dr, we never judge a job by it’s size or cover. We view every
+          At {{ COMPANY.name }}, we never judge a job by it’s size or cover. We view every
           single project as a unique creative challenge, and a chance to be the cure to
           your home improvement headaches.
         </p>

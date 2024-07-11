@@ -1,37 +1,7 @@
 <script setup lang="ts">
+import { TESTIMONIALS } from "../data";
 import { useSlider } from "../composables/useSlider";
 import FaIcon from "./FaIcon.vue";
-
-interface Testimonial {
-  name: string;
-  location: string;
-  review: string;
-  avatarUri: string;
-}
-
-const ITEMS: Testimonial[] = [
-  {
-    name: "Janette Eley",
-    location: "Frankston South",
-    review:
-      "The Patch Dr. did a great job. Very neat work, and Iʼm happy with the end result.",
-    avatarUri: "janette-eley.jpg",
-  },
-  {
-    name: "William Nguyen",
-    location: "Footscray",
-    review:
-      "Dallas helped me do some urgent patching of some holes which were made while installing ceiling fans in my apartment. He was more than happy to accommodate my tight schedule, and the patching work was fantastic. I’d highly recommend The Patch Dr. to anyone.",
-    avatarUri: "william-nguyen.jpg",
-  },
-  {
-    name: "Osher Klein",
-    location: "St Kilda East",
-    review:
-      "Dallas was very quick to respond, and came & completed the job the following day. He did a great job and left our house looking neat and tidy!",
-    avatarUri: "osher-klein.jpg",
-  },
-];
 
 const {
   index: activeIndex,
@@ -39,7 +9,7 @@ const {
   pause: pauseSlider,
   resume: resumeSlider,
   next: nextSlide,
-} = useSlider(ITEMS);
+} = useSlider(TESTIMONIALS);
 </script>
 
 <template>
@@ -76,7 +46,11 @@ const {
 
         <!-- indicators -->
         <nav class="flex w-full justify-center gap-8 py-2">
-          <div v-for="(item, index) in ITEMS" class="avatar" @click="nextSlide(index)">
+          <div
+            class="avatar"
+            v-for="(item, index) in TESTIMONIALS"
+            @click="nextSlide(index)"
+          >
             <div
               :class="[
                 'ring-offset-base-100 w-20 rounded-full ring ring-offset-2 cursor-pointer',
