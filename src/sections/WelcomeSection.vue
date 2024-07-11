@@ -5,7 +5,7 @@ import { COMPANY } from "../data/company";
 
 <template>
   <section
-    class="hero bg-cover bg-center bg-no-repeat text-base-100 h-auto md:min-h-screen py-10 pt-20"
+    class="hero bg-parallax text-base-100 h-auto md:min-h-screen py-10 pt-20"
     style="background-image: url('/images/welcome-section-bg.jpg')"
   >
     <div class="hero-content text-center h-full">

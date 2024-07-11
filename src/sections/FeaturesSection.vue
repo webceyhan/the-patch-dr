@@ -4,7 +4,7 @@ import { SERVICES } from "../data/service";
 
 <template>
   <section
-    class="hero bg-cover bg-center bg-no-repeat text-base-100 py-10 relative"
+    class="hero bg-parallax text-base-100 py-10 relative"
     style="background-image: url('/images/features-section-bg.jpg')"
   >
     <img src="/images/logo-aside.png" class="absolute right-0 max-w-xs" />
