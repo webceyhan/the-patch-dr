@@ -4,7 +4,7 @@ import { COMPANY } from "../data/company";
 
 <template>
   <section
-    class="hero bg-black bg-cover bg-center bg-no-repeat text-base-100 py-10"
+    class="hero bg-parallax text-base-100 py-10"
     style="background-image: url('/images/about-section-bg.jpg')"
   >
     <div class="hero-content">
