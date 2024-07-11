@@ -1,56 +1,5 @@
 <script setup lang="ts">
-interface Service {
-  id: string;
-  title: string;
-  feautures: string[];
-}
-
-const SERVICES: Service[] = [
-  {
-    id: "repairs",
-    title: "PLASTER REPAIRS",
-    feautures: [
-      "Plaster Hole Repairs",
-      "Crack Repairs",
-      "Water Damage Repairs",
-      "Internal Render Repairs",
-      "Decorative Rosette & Arch Removal",
-      "General Patch & Repairs",
-    ],
-  },
-  {
-    id: "plastering",
-    title: "FULL PLASTERING",
-    feautures: [
-      "Bathroom Reno WR Plastering",
-      "Kitchen Reno Plastering",
-      "New Extension Plastering",
-      "Decorative Cornice Installation",
-      "Sagging Ceiling Repair/Replacement",
-      "Cornice to Square Set Transformation",
-    ],
-  },
-  {
-    id: "painting",
-    title: "PAINTING",
-    feautures: [
-      "Interior Repainting",
-      "Renovation/Extension Painting",
-      "Enamel Doors & Trims",
-      "Weatherboard Repair & Painting",
-      "15+ Years Professional Experience",
-    ],
-  },
-  {
-    id: "consultancy",
-    title: "CONSULTANCY",
-    feautures: [
-      "Colour Scheme Advice & Consultancy",
-      "Design & Product Consultancy",
-      // more features
-    ],
-  },
-];
+import { SERVICES } from "../data";
 </script>
 
 <template>
@@ -75,7 +24,7 @@ const SERVICES: Service[] = [
             </h3>
 
             <ul class="list-disc pl-10">
-              <li v-for="feature in service.feautures">{{ feature }}</li>
+              <li v-for="feature in service.features">{{ feature }}</li>
             </ul>
           </div>
         </div>

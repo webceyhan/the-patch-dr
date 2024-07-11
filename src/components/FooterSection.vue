@@ -1,57 +1,6 @@
 <script setup lang="ts">
+import { COMPANY, CONTACT_LINKS, SOCIAL_LINKS } from "../data";
 import FaIcon from "./FaIcon.vue";
-
-interface Link {
-  label?: string;
-  icon?: string;
-  href?: string;
-  value?: string;
-}
-
-const CONTACT_LINKS: Link[] = [
-  {
-    icon: "location-dot",
-    label: "Location",
-    value: "Melbourne, Australia",
-  },
-  {
-    icon: "phone",
-    label: "Phone",
-    value: "0422 782 198",
-  },
-  {
-    icon: "envelope",
-    label: "Email",
-    href: "mailto:jobs@thepatchdr.com.au",
-    value: "jobs@thepatchdr.com.au",
-  },
-  {
-    icon: "globe",
-    label: "Website",
-    href: "http://www.thepatchdr.com.au/",
-    value: "www.thepatchdr.com.au",
-  },
-];
-
-const SOCIAL_LINKS: Link[] = [
-  {
-    icon: "facebook",
-    href: "https://www.facebook.com/thepatchdr",
-  },
-  {
-    icon: "tiktok",
-    href: "https://www.tiktok.com/@thepatchdr",
-  },
-  {
-    icon: "hipages",
-    href: "https://www.hipages.com.au/thepatchdr",
-  },
-  {
-    icon: "yellowpages",
-    href:
-      "https://www.yellowpages.com.au/vic/fitzroy/the-patch-dr-1000001742637-listing.html",
-  },
-];
 </script>
 
 <template>
@@ -73,13 +22,13 @@ const SOCIAL_LINKS: Link[] = [
     >
       <div v-for="link in CONTACT_LINKS" class="flex items-center gap-2">
         <FaIcon :name="link.icon!" class="text-neutral-400" />
-        <label class="text-neutral-400">{{ link.label }}:</label>
+        <span class="text-neutral-400">{{ link.alt }}:</span>
 
         <a v-if="link.href" :href="link.href" target="_blank" class="link link-hover">
-          {{ link.value }}
+          {{ link.label }}
         </a>
 
-        <span v-else> {{ link.value }} </span>
+        <span v-else> {{ link.label }} </span>
       </div>
     </nav>
 
@@ -99,7 +48,7 @@ const SOCIAL_LINKS: Link[] = [
 
     <!-- copyright -->
     <aside class="text-neutral-500 tracking-widest">
-      <p>Copyright © The Patch Dr. 2024</p>
+      <p>Copyright © {{ COMPANY.name }} 2024</p>
     </aside>
   </footer>
 </template>

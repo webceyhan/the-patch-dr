@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { COMPANY } from "../data";
+</script>
+
 <template>
   <section
     class="hero bg-cover bg-center bg-no-repeat text-base-100 h-auto md:min-h-screen py-10 pt-20"
@@ -17,7 +21,7 @@
           in touch with us for a free quote today.
         </p>
 
-        <a href="tel:0422782198" class="group inline-flex items-center gap-3">
+        <a :href="`tel:${COMPANY.phone}`" class="group inline-flex items-center gap-3">
           <img
             src="/images/social/phone.png"
             class="size-7 md:size-8 grayscale group-hover:grayscale-0 transition-all duration-300"
@@ -25,7 +29,7 @@
           <span
             class="text-3xl md:text-4xl group-hover:text-primary transition-all duration-300"
           >
-            0422 782 198
+            {{ COMPANY.phone }}
           </span>
         </a>
       </div>
