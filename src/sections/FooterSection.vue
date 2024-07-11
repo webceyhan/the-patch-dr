@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { COMPANY, CONTACT_LINKS, SOCIAL_LINKS } from "../data";
-import FaIcon from "../components/FaIcon.vue";
+import Icon from "../components/Icon.vue";
 </script>
 
 <template>
@@ -21,7 +21,7 @@ import FaIcon from "../components/FaIcon.vue";
       class="grid grid-flow-col- grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10 place-items-start"
     >
       <div v-for="link in CONTACT_LINKS" class="flex items-center gap-2">
-        <FaIcon :name="link.icon!" class="text-neutral-400" />
+        <Icon :name="link.icon!" class="text-neutral-400" />
         <span class="text-neutral-400">{{ link.alt }}:</span>
 
         <a v-if="link.href" :href="link.href" target="_blank" class="link link-hover">

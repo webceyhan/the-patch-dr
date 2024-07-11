@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { TESTIMONIALS } from "../data";
 import { useSlider } from "../composables/useSlider";
-import FaIcon from "../components/FaIcon.vue";
+import Icon from "../components/Icon.vue";
 
 const {
   index: activeIndex,
@@ -26,7 +26,7 @@ const {
           <span class="text-primary">Happy Clients</span>
         </h1>
 
-        <FaIcon name="quote-left" style="width: 48px; height: 48px" />
+        <Icon name="quote-left" style="width: 48px; height: 48px" />
 
         <!-- quote box -->
         <Transition
