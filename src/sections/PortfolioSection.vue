@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { WORKS, WORK_CATEGORIES } from "../data";
-import FaIcon from "./FaIcon.vue";
+import FaIcon from "../components/FaIcon.vue";
 
 const filter = ref("all");
 const photos = ref<typeof WORKS[0]["photos"]>([]);

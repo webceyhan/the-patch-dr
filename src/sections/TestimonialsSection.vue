@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { TESTIMONIALS } from "../data";
 import { useSlider } from "../composables/useSlider";
-import FaIcon from "./FaIcon.vue";
+import FaIcon from "../components/FaIcon.vue";
 
 const {
   index: activeIndex,
