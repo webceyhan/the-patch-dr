@@ -68,7 +68,7 @@ const filteredWorks = computed(() =>
         class="fixed inset-0 z-[999] bg-black/90 flex flex-col items-center justify-center p-10"
       >
         <button class="btn btn-lg btn-circle fixed top-4 right-4" @click="photos = []">
-          <Icon name="x" style="width: 32px; height: 32px" />
+          <Icon name="x" class="size-8" />
         </button>
 
         <div class="carousel carousel-center rounded-box w-full">

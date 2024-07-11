@@ -8,7 +8,7 @@ const { wasScrolled } = useScroll(200);
 <template>
   <div v-show="wasScrolled" class="fixed bottom-4 right-4">
     <a href="#page-top" class="btn btn-square">
-      <Icon name="arrow-up" style="width: 18px; height: 18px" />
+      <Icon name="arrow-up" class="size-6" />
     </a>
   </div>
 </template>
