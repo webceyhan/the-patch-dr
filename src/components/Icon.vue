@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <svg class="icon">
-    <use :xlink:href="`/fa-icons.svg#${name}`" />
+    <use :xlink:href="`/icons.svg#${name}`" />
   </svg>
 </template>
 

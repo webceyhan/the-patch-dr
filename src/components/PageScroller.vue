@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import FaIcon from "./FaIcon.vue";
+import Icon from "./Icon.vue";
 </script>
 
 <template>
   <div class="scroll-to-top affix" data-spy="affix" data-offset-top="200">
     <a href="#page-top">
-      <FaIcon name="arrow-up" />
+      <Icon name="arrow-up" />
     </a>
   </div>
 </template>
