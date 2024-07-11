@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-parallax {
+    @apply bg-black bg-cover bg-center bg-fixed bg-no-repeat;
+}

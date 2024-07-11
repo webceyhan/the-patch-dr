@@ -7,7 +7,7 @@ import SocialLink from "../components/SocialLink.vue";
 
 <template>
   <footer
-    class="footer footer-center bg-black bg-cover bg-center bg-no-repeat text-base-100 p-10"
+    class="footer footer-center bg-parallax text-base-100 p-10"
     style="background-image: url('/images/contact-section-bg.jpg')"
   >
     <header>
