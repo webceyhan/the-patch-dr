@@ -26,7 +26,7 @@ const {
           <span class="text-primary">Happy Clients</span>
         </h1>
 
-        <Icon name="quote-left" style="width: 48px; height: 48px" />
+        <Icon name="quote-left" class="size-12" />
 
         <!-- quote box -->
         <Transition
