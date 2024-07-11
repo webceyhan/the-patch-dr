@@ -3,7 +3,7 @@ import { ref } from "vue";
 import { NAV_LINKS } from "../data";
 import { useSpy } from "../composables/useSpy";
 import { useScroll } from "../composables/useScroll";
-import FaIcon from "./FaIcon.vue";
+import Icon from "./Icon.vue";
 
 const isMenuOpen = ref(false);
 const { visibleHash } = useSpy();
@@ -57,7 +57,7 @@ const { wasScrolled } = useScroll(200);
     <!-- mobile menu toggle -->
     <div class="navbar-end md:hidden">
       <button class="btn btn-square btn-ghost" @click="isMenuOpen = !isMenuOpen">
-        <FaIcon name="bars" />
+        <Icon name="bars" />
       </button>
     </div>
   </nav>

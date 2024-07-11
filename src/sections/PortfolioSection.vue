@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { WORKS, WORK_CATEGORIES } from "../data";
-import FaIcon from "../components/FaIcon.vue";
+import Icon from "../components/Icon.vue";
 
 const filter = ref("all");
 const photos = ref<typeof WORKS[0]["photos"]>([]);
@@ -68,7 +68,7 @@ const filteredWorks = computed(() =>
         class="fixed inset-0 z-[999] bg-black/90 flex flex-col items-center justify-center p-10"
       >
         <button class="btn btn-lg btn-circle fixed top-4 right-4" @click="photos = []">
-          <FaIcon name="x" style="width: 32px; height: 32px" />
+          <Icon name="x" style="width: 32px; height: 32px" />
         </button>
 
         <div class="carousel carousel-center rounded-box w-full">
