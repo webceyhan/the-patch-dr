@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { COMPANY, CONTACT_LINKS, SOCIAL_LINKS } from "../data";
-import FaIcon from "./FaIcon.vue";
+import FaIcon from "../components/FaIcon.vue";
 </script>
 
 <template>
