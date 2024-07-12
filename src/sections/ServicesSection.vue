@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { SERVICES } from "../data/service";
 import Section from "../components/Section.vue";
+import Card from "../components/Card.vue";
 </script>
 
 <template>
@@ -11,23 +12,12 @@ import Section from "../components/Section.vue";
 
     <!-- grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <!-- card -->
-      <div
+      <Card
         v-for="service in SERVICES"
-        class="card max-w-md bg-primary text-base-100 shadow-xl"
-      >
-        <figure>
-          <img
-            :src="`/images/services/${service.id}.png`"
-            :alt="service.title"
-            loading="lazy"
-          />
-        </figure>
-
-        <div class="card-body py-6">
-          <h2 class="card-title uppercase font-normal">{{ service.title }}</h2>
-        </div>
-      </div>
+        class="bg-primary text-base-100 rounded-badge"
+        :overlaySrc="`/images/services/${service.id}.png`"
+        :title="service.title"
+      />
     </div>
   </Section>
 </template>
