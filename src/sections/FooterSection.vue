@@ -8,7 +8,7 @@ import SocialLink from "../components/SocialLink.vue";
 <template>
   <section
     :class="[
-      'min-h-screen flex flex-col justify-center px-4 py-10 md:py-20',
+      'min-h-screen flex flex-col justify-center px-4 py-10 md:py-20 spy',
       'text-base-100 bg-cover bg-center bg-fixed bg-no-repeat',
     ]"
     style="background-image: url('/images/contact-section-bg.jpg')"
