@@ -2,18 +2,28 @@
 defineProps<{
   title?: string;
   overlaySrc?: string;
-  centered?: boolean;
+  flipped?: boolean;
 }>();
 </script>
 
 <template>
-  <div class="card overflow-hidden shadow-lg">
+  <div
+    class="card overflow-hidden rounded-badge shadow-lg"
+    :class="{ 'image-full': flipped }"
+  >
     <!-- overlay -->
     <figure v-if="overlaySrc">
       <img :src="overlaySrc" :alt="title" loading="lazy" />
     </figure>
 
-    <div class="card-body p-8">
+    <div
+      :class="[
+        'card-body p-8',
+        {
+          'bg-black/85 opacity-0 hover:opacity-100 transition-all duration-500': flipped,
+        },
+      ]"
+    >
       <!-- title -->
       <h2 v-if="title" class="card-title uppercase">
         {{ title }}
@@ -24,3 +34,9 @@ defineProps<{
     </div>
   </div>
 </template>
+
+<style scoped>
+.card.image-full:before {
+  opacity: 0;
+}
+</style>

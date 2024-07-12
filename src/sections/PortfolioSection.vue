@@ -2,6 +2,7 @@
 import { computed, ref } from "vue";
 import { WORKS, WORK_TAGS } from "../data/work";
 import Section from "../components/Section.vue";
+import Card from "../components/Card.vue";
 import Icon from "../components/Icon.vue";
 
 const filter = ref("all");
@@ -32,42 +33,31 @@ const filteredWorks = computed(() =>
     </ul>
 
     <!-- grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       <!-- card -->
-      <div
+      <Card
         v-for="item in filteredWorks"
-        class="card image-full text-base-content shadow-xl overflow-hidden"
+        class="text-base-content"
+        :overlaySrc="`/images/work/${item.id}-cover.jpg`"
+        flipped
       >
-        <figure>
-          <img
-            :src="`/images/work/${item.id}-cover.jpg`"
-            class="object-cover w-full h-full"
-            :alt="item.title"
-            loading="lazy"
-          />
-        </figure>
+        <h2 class="card-title text-primary uppercase">{{ item.title }}</h2>
 
-        <div
-          class="card-body bg-black/90 opacity-0 hover:opacity-100 transition-all duration-500"
-        >
-          <h2 class="card-title uppercase text-primary">{{ item.title }}</h2>
+        <h3 class="text-neutral-400 font-bold">Location: {{ item.location }}</h3>
 
-          <h3 class="text-neutral-400 font-bold">Location: {{ item.location }}</h3>
+        <p class="text-white py-4">{{ item.description }}</p>
 
-          <p class="text-white py-4">{{ item.description }}</p>
-
-          <div class="card-actions justify-end">
-            <button class="btn btn-sm bg-white" @click="photos = item.photos">
-              Take a look
-            </button>
-          </div>
+        <div class="card-actions justify-end">
+          <button class="btn btn-sm bg-white" @click="photos = item.photos">
+            Take a look
+          </button>
         </div>
-      </div>
+      </Card>
     </div>
 
     <Teleport v-if="photos.length" to="body">
       <div
-        class="fixed inset-0 z-[999] bg-black/90 flex flex-col items-center justify-center p-10"
+        class="fixed inset-0 z-[9999] bg-black/90 flex flex-col items-center justify-center p-10"
       >
         <button class="btn btn-lg btn-circle fixed top-4 right-4" @click="photos = []">
           <Icon name="x" class="size-8" />
@@ -86,9 +76,3 @@ const filteredWorks = computed(() =>
     </Teleport>
   </Section>
 </template>
-
-<style scoped>
-.card.image-full:before {
-  opacity: 0;
-}
-</style>
