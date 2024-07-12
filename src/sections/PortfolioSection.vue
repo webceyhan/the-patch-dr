@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { WORKS, WORK_TAGS } from "../data/work";
+import Section from "../components/Section.vue";
 import Icon from "../components/Icon.vue";
 
 const filter = ref("all");
@@ -14,14 +15,15 @@ const filteredWorks = computed(() =>
 </script>
 
 <template>
-  <section class="container mx-auto p-4 md:py-10 flex flex-col items-center space-y-10">
-    <!-- header -->
-    <header class="text-3xl font-bold uppercase text-center text-neutral-400">
+  <Section>
+    <template #title class="uppercase text-neutral-400">
       A few of our recent projects
-    </header>
+    </template>
 
     <!-- filters -->
-    <ul class="menu menu-sm bg-base-200 rounded-box max-h-14 overflow-x-scroll">
+    <ul
+      class="menu menu-sm md:menu-horizontal bg-base-200 justify-center rounded-box max-h-14 overflow-x-scroll"
+    >
       <li v-for="tags in WORK_TAGS">
         <a :class="{ active: filter === tags }" @click.prevent="filter = tags">
           {{ tags }}
@@ -82,7 +84,7 @@ const filteredWorks = computed(() =>
         </div>
       </div>
     </Teleport>
-  </section>
+  </Section>
 </template>
 
 <style scoped>
