@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <section
     :class="[
-      'hero min-h-screen px-4 py-10 md:py-20',
+      'hero min-h-screen px-4 py-10 md:py-20 spy',
       { 'text-base-100 bg-cover bg-center bg-fixed bg-no-repeat': overlaySrc },
     ]"
     :style="{ backgroundImage: overlaySrc ? `url('${overlaySrc}')` : undefined }"
