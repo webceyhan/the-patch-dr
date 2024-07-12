@@ -38,7 +38,7 @@ onMounted(() => {
 
     <TestimonialsSection id="testimonials" class="spy" />
 
-    <FooterSection />
+    <FooterSection id="contact" class="spy" />
 
     <PageScroller />
   </div>
