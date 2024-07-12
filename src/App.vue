@@ -22,23 +22,23 @@ onMounted(() => {
   <div id="page-top">
     <Preloader />
 
-    <Navbar id="navbar" class="spy" />
+    <Navbar id="navbar" />
 
-    <WelcomeSection id="welcome" class="spy" />
+    <WelcomeSection id="welcome" />
 
-    <ServicesSection id="service" class="spy" />
+    <ServicesSection id="service" />
 
-    <AboutSection id="about" class="spy" />
+    <AboutSection id="about" />
 
-    <CallActionSection id="call-action" class="spy" />
+    <CallActionSection id="call-action" />
 
-    <FeaturesSection id="features" class="spy" />
+    <FeaturesSection id="features" />
 
-    <PortfolioSection id="portfolio" class="spy" />
+    <PortfolioSection id="portfolio" />
 
-    <TestimonialsSection id="testimonials" class="spy" />
+    <TestimonialsSection id="testimonials" />
 
-    <FooterSection id="contact" class="spy" />
+    <FooterSection id="contact" />
 
     <PageScroller />
   </div>
