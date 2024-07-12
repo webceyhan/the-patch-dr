@@ -19,7 +19,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="page-top" class="h-screen scroll-smooth">
+  <div id="page-top">
     <Preloader />
 
     <Navbar id="navbar" class="spy" />
