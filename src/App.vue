@@ -11,7 +11,7 @@ import CallActionSection from "./sections/CallActionSection.vue";
 import FeaturesSection from "./sections/FeaturesSection.vue";
 import PortfolioSection from "./sections/PortfolioSection.vue";
 import TestimonialsSection from "./sections/TestimonialsSection.vue";
-import FooterSection from "./sections/FooterSection.vue";
+import ContactSection from "./sections/ContactSection.vue";
 
 onMounted(() => {
   useSpy().observe();
@@ -38,7 +38,7 @@ onMounted(() => {
 
     <TestimonialsSection id="testimonials" />
 
-    <FooterSection id="contact" />
+    <ContactSection id="contact" />
 
     <PageScroller />
   </div>
