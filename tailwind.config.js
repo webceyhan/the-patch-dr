@@ -1,5 +1,6 @@
 import daisyui from 'daisyui';
 import { fontFamily } from 'tailwindcss/defaultTheme';
+import { light } from 'daisyui/src/theming/themes';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,7 +15,14 @@ export default {
     },
     plugins: [daisyui],
     daisyui: {
-        themes: ['light'],
+        themes: [
+            {
+                light: {
+                    ...light,
+                    primary: '#ea5e56',
+                },
+            },
+        ],
         darkTheme: 'light',
         logs: false,
     },
