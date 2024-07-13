@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { COMPANY } from "../data/company";
 import Section from "../components/Section.vue";
+import Button from "../components/Button.vue";
 import Icon from "../components/Icon.vue";
 </script>
 
@@ -37,13 +38,10 @@ import Icon from "../components/Icon.vue";
 
       <p></p>
 
-      <a
-        class="btn btn-block btn-primary h-20 text-2xl tracking-widest rounded-full gap-4"
-        :href="`tel:${COMPANY.phone}`"
-      >
+      <Button class="btn-primary" :href="`tel:${COMPANY.phone}`" large>
         <Icon name="phone" class="size-8" />
         {{ COMPANY.phone }}
-      </a>
+      </Button>
     </div>
   </Section>
 </template>
