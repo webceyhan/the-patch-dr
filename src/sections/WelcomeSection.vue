@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { COMPANY } from "../data/company";
 import Section from "../components/Section.vue";
-import SocialLink from "../components/SocialLink.vue";
+import Button from "../components/Button.vue";
+import Icon from "../components/Icon.vue";
 </script>
 
 <template>
-  <Section  overlaySrc="/images/welcome-section-bg.jpg" centered>
+  <Section overlaySrc="/images/welcome-section-bg.jpg" centered>
     <template #title> SURGERY, FOR <span class="text-primary">SPACES</span>. </template>
 
     <p class="max-w-3xl text-xl pb-20">
@@ -14,10 +15,9 @@ import SocialLink from "../components/SocialLink.vue";
       with us for a free quote today.
     </p>
 
-    <SocialLink
-      :label="COMPANY.phone"
-      :href="`tel:${COMPANY.phone}`"
-      :imageUri="`/images/social/phone.png`"
-    />
+    <Button class="btn-primary btn-outline" :href="`tel:${COMPANY.phone}`" large>
+      <Icon name="phone" class="size-8" />
+      {{ COMPANY.phone }}
+    </Button>
   </Section>
 </template>
