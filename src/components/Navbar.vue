@@ -14,51 +14,54 @@ const { wasScrolled } = useScroll(200);
   <nav
     role="navigation"
     :class="[
-      'navbar fixed top-0 z-[9999] bg-base-100 dark:md:bg-transparent',
+      'navbar fixed top-0 z-[9999]',
+      'bg-base-100 dark:md:bg-transparent transition-colors duration-300',
       { dark: !wasScrolled },
     ]"
   >
-    <!-- logo -->
-    <div class="navbar-start">
-      <a href="#page-top" class="btn btn-link w-56">
-        <img src="/images/logo-navbar.png" class="dark:md:hidden" />
-        <img src="/images/logo-navbar-dark.png" class="hidden dark:md:inline" />
-      </a>
-    </div>
+    <div class="container mx-auto md:dark:py-10 transition-all duration-500">
+      <!-- logo -->
+      <div class="flex-1">
+        <a href="#page-top" class="btn btn-link w-56">
+          <img src="/images/logo-navbar.png" class="dark:md:hidden" />
+          <img src="/images/logo-navbar-dark.png" class="hidden dark:md:inline" />
+        </a>
+      </div>
 
-    <!-- desktop menu -->
-    <div class="navbar-center max-md:hidden">
-      <ul class="menu menu-horizontal">
-        <li v-for="link in NAV_LINKS">
-          <a
-            :href="link.href"
-            :class="[
-              'uppercase px-2 dark:text-base-100/50 dark:hover:text-base-100',
-              { 'text-primary': link.href === visibleHash },
-            ]"
-          >
-            {{ link.label }}
-          </a>
-        </li>
-      </ul>
-    </div>
+      <!-- desktop menu -->
+      <div class="flex-none max-md:hidden">
+        <ul class="menu menu-horizontal">
+          <li v-for="link in NAV_LINKS">
+            <a
+              :href="link.href"
+              :class="[
+                'uppercase px-2 dark:text-base-100/50 dark:hover:text-base-100',
+                { 'text-primary': link.href === visibleHash },
+              ]"
+            >
+              {{ link.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <!-- mobile menu -->
-    <div v-if="isMenuOpen" class="fixed md:hidden inset-x-0 top-14 bg-base-100">
-      <ul class="menu w-full p-4" @click="isMenuOpen = false">
-        <li v-for="link in NAV_LINKS" class="w-full">
-          <a :href="link.href" class="uppercase">
-            {{ link.label }}
-          </a>
-        </li>
-      </ul>
-    </div>
+      <!-- mobile menu -->
+      <div v-if="isMenuOpen" class="fixed md:hidden inset-x-0 top-14 bg-base-100">
+        <ul class="menu w-full p-4" @click="isMenuOpen = false">
+          <li v-for="link in NAV_LINKS" class="w-full">
+            <a :href="link.href" class="uppercase">
+              {{ link.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <!-- mobile menu toggle -->
-    <div class="navbar-end md:hidden">
-      <button class="btn btn-square btn-ghost" @click="isMenuOpen = !isMenuOpen">
-        <Icon name="bars" />
-      </button>
+      <!-- mobile menu toggle -->
+      <div class="navbar-none md:hidden">
+        <button class="btn btn-square btn-ghost" @click="isMenuOpen = !isMenuOpen">
+          <Icon name="bars" />
+        </button>
+      </div>
     </div>
   </nav>
 </template>
