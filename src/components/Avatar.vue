@@ -11,7 +11,7 @@ defineProps<{
     <div
       :class="[
         'ring-offset-base-100 rounded-full ring ring-offset-2',
-        { 'ring-primary': active },
+        { 'ring-primary animate-pulse': active },
       ]"
     >
       <img :src :alt />
