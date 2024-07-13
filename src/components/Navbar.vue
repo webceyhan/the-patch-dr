@@ -46,18 +46,26 @@ const { wasScrolled } = useScroll(200);
       </div>
 
       <!-- mobile menu -->
-      <div v-if="isMenuOpen" class="fixed md:hidden inset-x-0 top-14 bg-base-100">
-        <ul class="menu w-full p-4" @click="isMenuOpen = false">
-          <li v-for="link in NAV_LINKS" class="w-full">
-            <a :href="link.href" class="uppercase">
-              {{ link.label }}
-            </a>
-          </li>
-        </ul>
-      </div>
+      <Transition
+        mode="out-in"
+        enter-from-class="-translate-y-full opacity-0"
+        enter-active-class="transition-all duration-500"
+        leave-to-class="-translate-y-full opacity-0"
+        leave-active-class="transition duration-500"
+      >
+        <div v-if="isMenuOpen" class="md:hidden fixed inset-x-0 top-14 bg-base-100 -z-50 shadow-lg">
+          <ul class="menu w-full p-4" @click="isMenuOpen = false">
+            <li v-for="link in NAV_LINKS" class="w-full">
+              <a :href="link.href" class="uppercase">
+                {{ link.label }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </Transition>
 
       <!-- mobile menu toggle -->
-      <div class="navbar-none md:hidden">
+      <div class="flex-none md:hidden">
         <button class="btn btn-square btn-ghost" @click="isMenuOpen = !isMenuOpen">
           <Icon name="bars" />
         </button>
