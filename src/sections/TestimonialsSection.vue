@@ -31,12 +31,12 @@ const {
       <!-- quote box -->
       <Transition
         mode="out-in"
-        enter-from-class="translate-x-full"
+        enter-from-class="-translate-x-full"
         enter-active-class="transition duration-500"
         leave-to-class="opacity-0"
         leave-active-class="transition duration-300"
       >
-        <blockquote class="max-w-4xl h-48 md:h-28 space-y-2" :key="activeItem.name">
+        <blockquote class="md:max-w-4xl h-60 md:h-28 space-y-2" :key="activeItem.name">
           <p>{{ activeItem.review }}</p>
           <small class="text-neutral-500">
             {{ activeItem.name }}, {{ activeItem.location }}.
