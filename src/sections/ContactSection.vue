@@ -1,18 +1,13 @@
 <script setup lang="ts">
 import { COMPANY } from "../data/company";
 import { CONTACT_LINKS, SOCIAL_LINKS } from "../data/contact";
+import Section from "../components/Section.vue";
 import Icon from "../components/Icon.vue";
 import Link from "../components/Link.vue";
 </script>
 
 <template>
-  <section
-    :class="[
-      'min-h-screen flex flex-col justify-center px-4 py-10 md:py-20 spy',
-      'text-base-100 bg-cover bg-center bg-fixed bg-no-repeat',
-    ]"
-    style="background-image: url('/images/contact-section-bg.jpg')"
-  >
+  <Section overlaySrc="/images/contact-section-bg.jpg">
     <footer class="footer footer-center">
       <!-- header -->
       <header class="space-y-2">
@@ -51,5 +46,5 @@ import Link from "../components/Link.vue";
         <p>Copyright © {{ COMPANY.name }} 2024</p>
       </aside>
     </footer>
-  </section>
+  </Section>
 </template>
