@@ -14,9 +14,9 @@ const { wasScrolled } = useScroll(200);
   <nav
     role="navigation"
     :class="[
+      { dark: !wasScrolled },
       'navbar fixed top-0 z-[9999]',
       'bg-base-100 dark:md:bg-transparent transition-colors duration-300',
-      { dark: !wasScrolled },
     ]"
   >
     <div class="container mx-auto md:dark:py-10 transition-all duration-500">
@@ -35,7 +35,7 @@ const { wasScrolled } = useScroll(200);
             <a
               :href="link.href"
               :class="[
-                'uppercase px-2 dark:text-base-100/50 dark:hover:text-base-100',
+                'dark:text-base-100 uppercase font-bold px-2 ',
                 { 'text-primary': link.href === visibleHash },
               ]"
             >
@@ -53,7 +53,10 @@ const { wasScrolled } = useScroll(200);
         leave-to-class="-translate-y-full opacity-0"
         leave-active-class="transition duration-500"
       >
-        <div v-if="isMenuOpen" class="md:hidden fixed inset-x-0 top-14 bg-base-100 -z-50 shadow-lg">
+        <div
+          v-if="isMenuOpen"
+          class="md:hidden fixed inset-x-0 top-14 bg-base-100 -z-50 shadow-lg"
+        >
           <ul class="menu w-full p-4" @click="isMenuOpen = false">
             <li v-for="link in NAV_LINKS" class="w-full">
               <a :href="link.href" class="uppercase">

@@ -9,7 +9,10 @@ defineProps<{
   <section
     :class="[
       'hero min-h-screen px-4 py-10 md:py-20 spy',
-      { 'text-base-100 bg-cover bg-center bg-fixed bg-no-repeat': overlaySrc },
+      {
+        'bg-base-100 text-base-content': !overlaySrc, // light (default)
+        'bg-base-content text-base-100 bg-cover bg-center bg-fixed bg-no-repeat': overlaySrc, // dark
+      },
     ]"
     :style="{ backgroundImage: overlaySrc ? `url('${overlaySrc}')` : undefined }"
   >
