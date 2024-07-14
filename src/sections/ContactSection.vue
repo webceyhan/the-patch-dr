@@ -2,7 +2,7 @@
 import { COMPANY } from "../data/company";
 import { CONTACT_LINKS, SOCIAL_LINKS } from "../data/contact";
 import Icon from "../components/Icon.vue";
-import SocialLink from "../components/SocialLink.vue";
+import Link from "../components/Link.vue";
 </script>
 
 <template>
@@ -16,40 +16,38 @@ import SocialLink from "../components/SocialLink.vue";
     <footer class="footer footer-center">
       <!-- header -->
       <header class="space-y-2">
-        <h1 class="text-3xl md:text-5xl font-bold">Get In Touch</h1>
+        <h1 class="text-4xl md:text-6xl font-bold">Get In Touch</h1>
 
-        <h2 class="text-xl text-primary">
+        <h2 class="text-2xl text-primary">
           Connect with us via email or phone, or check out our online profiles
         </h2>
       </header>
 
       <!-- contact info -->
-      <nav class="grid grid-cols-1 md:grid-cols-2 md:gap-x-10 place-items-start gap-4">
-        <div v-for="link in CONTACT_LINKS" class="flex items-center text-lg gap-2">
-          <Icon :name="link.icon!" class="text-neutral-400" />
-          <span class="text-neutral-400">{{ link.alt }}:</span>
-
-          <a v-if="link.href" :href="link.href" target="_blank" class="link link-hover">
-            {{ link.label }}
-          </a>
-
-          <span v-else> {{ link.label }} </span>
+      <nav class="flex flex-col place-items-start gap-4 py-10">
+        <div
+          v-for="link in CONTACT_LINKS"
+          class="flex items-center text-lg md:text-xl gap-3"
+        >
+          <Icon :name="link.icon!" class="text-neutral-400 size-4" />
+          <span class="text-neutral-400 w-20 md:w-28 text-left">{{ link.alt }}:</span>
+          <Link :href="link.href" :label="link.label" target="_blank" />
         </div>
       </nav>
 
       <!-- social links -->
-      <nav class="flex-1">
-        <div class="grid grid-flow-col gap-4">
-          <SocialLink
-            v-for="link in SOCIAL_LINKS"
-            :href="link.href!"
-            :imageUri="`/images/social/${link.icon}.png`"
+      <nav class="grid grid-flow-col gap-4">
+        <Link v-for="link in SOCIAL_LINKS" :href="link.href!" target="_blank" greyed>
+          <img
+            class="size-16"
+            :src="`/images/social/${link.icon}.png`"
+            :alt="link.icon"
           />
-        </div>
+        </Link>
       </nav>
 
       <!-- copyright -->
-      <aside class="text-neutral-500 tracking-widest">
+      <aside class="text-lg md:text-2x text-neutral-400 tracking-widest">
         <p>Copyright © {{ COMPANY.name }} 2024</p>
       </aside>
     </footer>
