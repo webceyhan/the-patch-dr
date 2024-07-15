@@ -67,7 +67,7 @@ const filteredWorks = computed(() =>
           <div v-for="photo in photos" class="carousel-item w-full">
             <img
               class="w-full object-cover"
-              :src="`/images/work/${photo.uri}`"
+              :src="`./images/work/${photo.uri}`"
               :alt="photo.alt"
             />
           </div>

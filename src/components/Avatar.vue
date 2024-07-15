@@ -14,7 +14,7 @@ defineProps<{
         { 'ring-primary animate-pulse': active },
       ]"
     >
-      <img :src :alt />
+      <img :src="`.${src}`" :alt />
     </div>
   </div>
 </template>

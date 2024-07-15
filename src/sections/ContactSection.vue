@@ -35,7 +35,7 @@ import Link from "../components/Link.vue";
         <Link v-for="link in SOCIAL_LINKS" :href="link.href!" target="_blank" greyed>
           <img
             class="size-16"
-            :src="`/images/social/${link.icon}.png`"
+            :src="`./images/social/${link.icon}.png`"
             :alt="link.icon"
           />
         </Link>

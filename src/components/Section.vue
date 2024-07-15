@@ -14,7 +14,7 @@ defineProps<{
         'bg-base-content text-base-100 bg-cover bg-center bg-fixed bg-no-repeat': overlaySrc, // dark
       },
     ]"
-    :style="{ backgroundImage: overlaySrc ? `url('${overlaySrc}')` : undefined }"
+    :style="{ backgroundImage: overlaySrc ? `url('.${overlaySrc}')` : undefined }"
   >
     <!-- overlay -->
     <slot name="overlay" />

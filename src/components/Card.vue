@@ -15,7 +15,7 @@ defineProps<{
     <figure v-if="overlaySrc">
       <img
         class="object-cover w-full h-auto"
-        :src="overlaySrc"
+        :src="`.${overlaySrc}`"
         :alt="title"
         loading="lazy"
       />
