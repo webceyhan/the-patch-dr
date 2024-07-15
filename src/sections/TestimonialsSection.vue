@@ -4,8 +4,10 @@ import { useSlider } from "../composables/useSlider";
 import Section from "../components/Section.vue";
 import Avatar from "../components/Avatar.vue";
 import Icon from "../components/Icon.vue";
+import Progress from "../components/Progress.vue";
 
 const {
+  progress,
   index: activeIndex,
   item: activeItem,
   pause: pauseSlider,
@@ -31,7 +33,7 @@ const {
       <!-- quote box -->
       <Transition
         mode="out-in"
-        enter-from-class="-translate-x-full"
+        enter-from-class="-translate-x-1/2 opacity-0"
         enter-active-class="transition duration-500"
         leave-to-class="opacity-0"
         leave-active-class="transition duration-300"
@@ -43,6 +45,8 @@ const {
           </small>
         </blockquote>
       </Transition>
+
+      <Progress class="md:w-96 h-px" :value="progress" :key="progress" />
 
       <!-- indicators -->
       <nav class="flex w-full justify-center gap-10">
