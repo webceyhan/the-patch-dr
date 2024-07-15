@@ -11,7 +11,7 @@ const { isLoading } = usePage();
   >
     <div
       v-if="isLoading"
-      class="fixed inset-0 bg-base-content/95 flex justify-center items-center"
+      class="fixed inset-0 bg-base-content/95 flex justify-center items-center z-[99999]"
     >
       <span class="loading loading-dots w-1/12 text-base-100" />
     </div>
