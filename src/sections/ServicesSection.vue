@@ -15,7 +15,7 @@ import Card from "../components/Card.vue";
       <Card
         v-for="service in SERVICES"
         class="bg-primary text-base-100"
-        :overlaySrc="`/images/services/${service.id}.png`"
+        :overlaySrc="service.imageUri"
         :title="service.title"
       />
     </div>

@@ -38,7 +38,7 @@ const filteredWorks = computed(() =>
       <Card
         v-for="item in filteredWorks"
         class="text-base-content"
-        :overlaySrc="`/images/work/${item.id}-cover.jpg`"
+        :overlaySrc="item.imageUri"
         flipped
       >
         <h2 class="card-title text-primary uppercase">{{ item.title }}</h2>
@@ -65,11 +65,7 @@ const filteredWorks = computed(() =>
 
         <div class="carousel carousel-center rounded-box w-full">
           <div v-for="photo in photos" class="carousel-item w-full">
-            <img
-              class="w-full object-cover"
-              :src="`./images/work/${photo.uri}`"
-              :alt="photo.alt"
-            />
+            <img class="w-full object-cover" :src="photo.uri" :alt="photo.alt" />
           </div>
         </div>
       </div>
