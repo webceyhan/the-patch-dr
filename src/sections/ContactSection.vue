@@ -4,7 +4,7 @@ import { CONTACT_LINKS, SOCIAL_LINKS } from "../data/contact";
 import Section from "../components/Section.vue";
 import Icon from "../components/Icon.vue";
 import Link from "../components/Link.vue";
-import { useAsset } from "../composables/useAsset";
+import Image from "../components/Image.vue";
 </script>
 
 <template>
@@ -34,7 +34,7 @@ import { useAsset } from "../composables/useAsset";
       <!-- social links -->
       <nav class="grid grid-flow-col gap-4">
         <Link v-for="link in SOCIAL_LINKS" :href="link.href!" target="_blank" greyed>
-          <img class="size-16" :src="useAsset(link.icon)" :alt="link.alt" />
+          <Image class="size-16" :src="link.icon!" :alt="link.alt" />
         </Link>
       </nav>
 
