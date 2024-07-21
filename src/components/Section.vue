@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { useAsset } from "../composables/useAsset";
+import { ref } from "vue";
+import { useLazyBackground } from "../composables/useLazyBackground";
 
 /**
  * Types
@@ -9,11 +10,16 @@ interface Props {
   centered?: boolean;
 }
 
-defineProps<Props>();
+const { overlaySrc } = defineProps<Props>();
+
+const section = ref<HTMLElement | null>(null);
+
+overlaySrc && useLazyBackground(section, overlaySrc);
 </script>
 
 <template>
   <section
+    ref="section"
     :class="[
       'hero min-h-screen px-4 py-10 md:py-20 spy',
       {
@@ -21,9 +27,6 @@ defineProps<Props>();
         'bg-base-content text-base-100 bg-cover bg-center bg-fixed bg-no-repeat': overlaySrc, // dark
       },
     ]"
-    :style="{
-        backgroundImage: overlaySrc ? `url(${useAsset(overlaySrc)})` : undefined
-    }"
   >
     <!-- overlay -->
     <slot name="overlay" />
