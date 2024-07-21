@@ -10,9 +10,9 @@ interface Props {
   active?: boolean;
 }
 
-const { src } = defineProps<Props>();
+const props = defineProps<Props>();
 
-const url = useAsset(src);
+const url = useAsset(props.src);
 </script>
 
 <template>

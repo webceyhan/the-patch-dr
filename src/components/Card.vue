@@ -10,9 +10,9 @@ interface Props {
   flipped?: boolean;
 }
 
-const { overlaySrc } = defineProps<Props>();
+const props = defineProps<Props>();
 
-const overlayUrl = useAsset(overlaySrc!);
+const overlayUrl = useAsset(props.overlaySrc!);
 </script>
 
 <template>

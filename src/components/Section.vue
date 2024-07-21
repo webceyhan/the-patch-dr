@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useAsset } from '../composables/useAsset';
+import { useAsset } from "../composables/useAsset";
 
 /**
  * Types
@@ -9,9 +9,9 @@ interface Props {
   centered?: boolean;
 }
 
-const { overlaySrc } = defineProps<Props>();
+const props = defineProps<Props>();
 
-const overlayUrl = useAsset(overlaySrc!);
+const overlayUrl = useAsset(props.overlaySrc!);
 </script>
 
 <template>
