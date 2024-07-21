@@ -53,8 +53,8 @@ const {
         <Avatar
           v-for="(item, index) in TESTIMONIALS"
           @click="nextSlide(index)"
-          :src="`/images/testimonials/${item.avatarUri}`"
           :active="index === activeIndex"
+          :src="item.avatarUri"
           :alt="item.name"
         />
       </nav>

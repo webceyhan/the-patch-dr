@@ -1,6 +1,7 @@
 export interface Service {
     id: string;
     title: string;
+    imageUri: string;
     features: string[];
 }
 
@@ -8,6 +9,7 @@ export const SERVICES: Service[] = [
     {
         id: 'repairs',
         title: 'Plaster Repairs',
+        imageUri: '/images/services/repairs.png',
         features: [
             'Plaster Hole Repairs',
             'Crack Repairs',
@@ -20,6 +22,7 @@ export const SERVICES: Service[] = [
     {
         id: 'plastering',
         title: 'Full Plastering',
+        imageUri: '/images/services/plastering.png',
         features: [
             'Bathroom Reno WR Plastering',
             'Kitchen Reno Plastering',
@@ -32,6 +35,7 @@ export const SERVICES: Service[] = [
     {
         id: 'painting',
         title: 'Painting',
+        imageUri: '/images/services/painting.png',
         features: [
             'Interior Repainting',
             'Renovation/Extension Painting',
@@ -43,6 +47,7 @@ export const SERVICES: Service[] = [
     {
         id: 'consultancy',
         title: 'Consultancy',
+        imageUri: '/images/services/consultancy.png',
         features: [
             'Colour Scheme Advice & Consultancy',
             'Design & Product Consultancy',

@@ -10,6 +10,7 @@ export interface Work {
     location: string;
     description: string;
     tags: string[];
+    imageUri: string;
     photos: Photo[];
 }
 
@@ -21,9 +22,10 @@ export const WORKS: Work[] = [
         description:
             'Complete 2 room crack repair & repaint of an Art Deco property in Thornbury.',
         tags: ['basement', 'kitchen', 'painting'],
+        imageUri: '/images/work/interior-repaint-cover.jpg',
         photos: [
             {
-                uri: 'interior-repaint-1.jpg',
+                uri: '/images/work/interior-repaint-1.jpg',
                 alt: 'Full repair & repaint. Fyffe St, Thornbury.',
             },
         ],
@@ -35,9 +37,10 @@ export const WORKS: Work[] = [
         description:
             'Complete plaster repair & repaint of a new organic food cafe on the outskirts of Richmond.',
         tags: ['sanitary', 'kitchen', 'electrical'],
+        imageUri: '/images/work/cafe-renovation-cover.jpg',
         photos: [
             {
-                uri: 'cafe-renovation-1.jpg',
+                uri: '/images/work/cafe-renovation-1.jpg',
                 alt: 'Complete interior/exterior repaint. Fresh Organic Goods, Richmond',
             },
         ],
@@ -49,9 +52,10 @@ export const WORKS: Work[] = [
         description:
             'Plastering of a brand new rumpus room extension in Epping.',
         tags: ['kitchen', 'painting'],
+        imageUri: '/images/work/extension-plastering-cover.jpg',
         photos: [
             {
-                uri: 'extension-plastering-1.jpg',
+                uri: '/images/work/extension-plastering-1.jpg',
                 alt: 'Complete extension plastering in Epping',
             },
         ],
@@ -63,9 +67,10 @@ export const WORKS: Work[] = [
         description:
             'Numerous repairs & painting preparation work for a modern office building in St Kilda Rd, Melbourne.',
         tags: ['electrical', 'kitchen'],
+        imageUri: '/images/work/plaster-repairs-cover.jpg',
         photos: [
             {
-                uri: 'plaster-repairs-1.jpg',
+                uri: '/images/work/plaster-repairs-1.jpg',
                 alt: 'Pre-painting repair work. St Kilda Rd, Melbourne',
             },
         ],
@@ -77,21 +82,22 @@ export const WORKS: Work[] = [
         description:
             'Complete renovation & repaint of a modern Indian eatery named Madras Brothers. Smith St, Collingwood.',
         tags: ['plumbing', 'kitchen'],
+        imageUri: '/images/work/restaurant-renovation-cover.jpg',
         photos: [
             {
-                uri: 'restaurant-renovation-1.jpg',
+                uri: '/images/work/restaurant-renovation-1.jpg',
                 alt: 'Complete interior & exterior repaint. Madras Bros, Collingwood',
             },
             {
-                uri: 'restaurant-renovation-2.jpg',
+                uri: '/images/work/restaurant-renovation-2.jpg',
                 alt: 'Exterior courtyard repaint, before & after.',
             },
             {
-                uri: 'restaurant-renovation-3.jpg',
+                uri: '/images/work/restaurant-renovation-3.jpg',
                 alt: 'Madras Bros, Collingwood.',
             },
             {
-                uri: 'restaurant-renovation-4.jpg',
+                uri: '/images/work/restaurant-renovation-4.jpg',
                 alt: 'Entry & shopfront repaint, before & after. Madras Bros, Collingwood.',
             },
         ],
@@ -103,9 +109,10 @@ export const WORKS: Work[] = [
         description:
             'Medium plaster wall repair after an accident exiting their manhole.',
         tags: ['basement', 'painting'],
+        imageUri: '/images/work/patch-repair-cover.jpg',
         photos: [
             {
-                uri: 'patch-repair-1.jpg',
+                uri: '/images/work/patch-repair-1.jpg',
                 alt: 'Patch Repair',
             },
         ],
@@ -117,9 +124,10 @@ export const WORKS: Work[] = [
         description:
             'Former downlight hole & crack repairs in a modern apartment in Richmond.',
         tags: ['sanitary', 'plumbing'],
+        imageUri: '/images/work/ceiling-repairs-cover.jpg',
         photos: [
             {
-                uri: 'ceiling-repairs-1.jpg',
+                uri: '/images/work/ceiling-repairs-1.jpg',
                 alt: 'Ceiling repairs, Richmond',
             },
         ],
@@ -131,9 +139,10 @@ export const WORKS: Work[] = [
         description:
             'Repairing numerous ceiling holes caused by switching to smaller downlights.',
         tags: ['kitchen', 'electrical'],
+        imageUri: '/images/work/downlight-repairs-cover.jpg',
         photos: [
             {
-                uri: 'downlight-repairs-1.jpg',
+                uri: '/images/work/downlight-repairs-1.jpg',
                 alt: 'Multiple downlight hole repairs, Kensington.',
             },
         ],
