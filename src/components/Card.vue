@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useAsset } from "../composables/useAsset";
+import Image from "./Image.vue";
 
 /**
  * Types
@@ -20,12 +20,7 @@ defineProps<Props>();
   >
     <!-- overlay -->
     <figure v-if="overlaySrc">
-      <img
-        class="object-cover w-full h-auto"
-        :src="useAsset(overlaySrc)"
-        :alt="title"
-        loading="lazy"
-      />
+      <Image class="object-cover w-full h-auto" :src="overlaySrc" :alt="title" lazy />
     </figure>
 
     <div

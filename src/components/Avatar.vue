@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useAsset } from "../composables/useAsset";
+import Image from "./Image.vue";
 
 /**
  * Types
@@ -21,7 +21,7 @@ defineProps<Props>();
         { 'ring-primary animate-pulse': active },
       ]"
     >
-      <img :src="useAsset(src)" :alt />
+      <Image :src :alt />
     </div>
   </div>
 </template>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { COMPANY } from "../data/company";
 import Section from "../components/Section.vue";
+import Image from "../components/Image.vue";
 </script>
 
 <template>
@@ -30,9 +31,10 @@ import Section from "../components/Section.vue";
         <p>Call or text us today to arrange a no obligation quote.</p>
       </div>
 
-      <img
+      <Image
         class="lg:max-w-lg rounded-badge opacity-85"
         src="/images/about-section-highlights.jpg"
+        lazy
       />
     </div>
   </Section>

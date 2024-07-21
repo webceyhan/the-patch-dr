@@ -3,14 +3,16 @@ import { COMPANY } from "../data/company";
 import Section from "../components/Section.vue";
 import Button from "../components/Button.vue";
 import Icon from "../components/Icon.vue";
+import Image from "../components/Image.vue";
 </script>
 
 <template>
   <Section class="relative">
     <template #overlay>
-      <img
+      <Image
         class="absolute -left-4 bottom-0 md:max-w-md"
         src="/images/call-action-section-bg.jpg"
+        lazy
       />
     </template>
 
