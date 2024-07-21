@@ -1,9 +1,14 @@
 <script setup lang="ts">
-defineProps<{
+/**
+ * Types
+ */
+interface Props {
   title?: string;
   overlaySrc?: string;
   flipped?: boolean;
-}>();
+}
+
+defineProps<Props>();
 </script>
 
 <template>

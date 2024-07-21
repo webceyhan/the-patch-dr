@@ -1,9 +1,14 @@
 <script setup lang="ts">
-defineProps<{
+/**
+ * Types
+ */
+interface Props {
   src: string;
   alt: string;
   active?: boolean;
-}>();
+}
+
+defineProps<Props>();
 </script>
 
 <template>
