@@ -29,22 +29,22 @@ export const CONTACT_LINKS: Link[] = [
 
 export const SOCIAL_LINKS: Link[] = [
     {
-        icon: '/images/social/facebook.png',
+        icon: 'facebook',
         href: 'https://www.facebook.com/thepatchdr',
         alt: 'Facebook',
     },
     {
-        icon: '/images/social/tiktok.png',
+        icon: 'tiktok',
         href: 'https://www.tiktok.com/@thepatchdr',
         alt: 'TikTok',
     },
     {
-        icon: '/images/social/hipages.png',
+        icon: 'hipages',
         href: 'https://www.hipages.com.au/thepatchdr',
         alt: 'HiPages',
     },
     {
-        icon: '/images/social/yellowpages.png',
+        icon: 'yellowpages',
         href: 'https://www.yellowpages.com.au/vic/fitzroy/the-patch-dr-1000001742637-listing.html',
         alt: 'Yellow Pages',
     },

@@ -4,7 +4,6 @@ import { CONTACT_LINKS, SOCIAL_LINKS } from "../data/contact";
 import Section from "../components/Section.vue";
 import Icon from "../components/Icon.vue";
 import Link from "../components/Link.vue";
-import Image from "../components/Image.vue";
 </script>
 
 <template>
@@ -34,7 +33,7 @@ import Image from "../components/Image.vue";
       <!-- social links -->
       <nav class="grid grid-flow-col gap-4">
         <Link v-for="link in SOCIAL_LINKS" :href="link.href!" target="_blank" greyed>
-          <Image class="size-16" :src="link.icon!" :alt="link.alt" />
+          <Icon :name="link.icon!" class="size-16 rounded-full ring-1" />
         </Link>
       </nav>
 
