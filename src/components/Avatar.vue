@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useAsset } from "../composables/useAsset";
+
 /**
  * Types
  */
@@ -8,7 +10,9 @@ interface Props {
   active?: boolean;
 }
 
-defineProps<Props>();
+const { src } = defineProps<Props>();
+
+const url = useAsset(src);
 </script>
 
 <template>
@@ -19,7 +23,7 @@ defineProps<Props>();
         { 'ring-primary animate-pulse': active },
       ]"
     >
-      <img :src="`.${src}`" :alt />
+      <img :src="url" :alt />
     </div>
   </div>
 </template>
