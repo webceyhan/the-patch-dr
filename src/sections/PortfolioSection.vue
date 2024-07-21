@@ -4,6 +4,7 @@ import { WORKS, WORK_TAGS } from "../data/work";
 import Section from "../components/Section.vue";
 import Card from "../components/Card.vue";
 import Icon from "../components/Icon.vue";
+import Image from "../components/Image.vue";
 
 const filter = ref("all");
 const photos = ref<typeof WORKS[0]["photos"]>([]);
@@ -65,7 +66,7 @@ const filteredWorks = computed(() =>
 
         <div class="carousel carousel-center rounded-box w-full">
           <div v-for="photo in photos" class="carousel-item w-full">
-            <img class="w-full object-cover" :src="photo.uri" :alt="photo.alt" />
+            <Image class="w-full object-cover" :src="photo.uri!" :alt="photo.alt" />
           </div>
         </div>
       </div>
