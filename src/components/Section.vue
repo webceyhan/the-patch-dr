@@ -1,8 +1,13 @@
 <script setup lang="ts">
-defineProps<{
+/**
+ * Types
+ */
+interface Props {
   overlaySrc?: string;
   centered?: boolean;
-}>();
+}
+
+defineProps<Props>();
 </script>
 
 <template>

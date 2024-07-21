@@ -1,7 +1,12 @@
 <script setup lang="ts">
-defineProps<{
+/**
+ * Types
+ */
+interface Props {
   name: string;
-}>();
+}
+
+defineProps<Props>();
 </script>
 
 <template>
@@ -9,4 +14,3 @@ defineProps<{
     <use :xlink:href="`./icons.svg#${name}`" />
   </svg>
 </template>
-
