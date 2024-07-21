@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useAsset } from "../composables/useAsset";
+
 /**
  * Types
  */
@@ -8,7 +10,9 @@ interface Props {
   flipped?: boolean;
 }
 
-defineProps<Props>();
+const { overlaySrc } = defineProps<Props>();
+
+const overlayUrl = useAsset(overlaySrc!);
 </script>
 
 <template>
@@ -20,7 +24,7 @@ defineProps<Props>();
     <figure v-if="overlaySrc">
       <img
         class="object-cover w-full h-auto"
-        :src="`.${overlaySrc}`"
+        :src="overlayUrl"
         :alt="title"
         loading="lazy"
       />
