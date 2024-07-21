@@ -10,9 +10,7 @@ interface Props {
   flipped?: boolean;
 }
 
-const props = defineProps<Props>();
-
-const overlayUrl = useAsset(props.overlaySrc!);
+defineProps<Props>();
 </script>
 
 <template>
@@ -24,7 +22,7 @@ const overlayUrl = useAsset(props.overlaySrc!);
     <figure v-if="overlaySrc">
       <img
         class="object-cover w-full h-auto"
-        :src="overlayUrl"
+        :src="useAsset(overlaySrc)"
         :alt="title"
         loading="lazy"
       />

@@ -10,9 +10,7 @@ interface Props {
   active?: boolean;
 }
 
-const props = defineProps<Props>();
-
-const url = useAsset(props.src);
+defineProps<Props>();
 </script>
 
 <template>
@@ -23,7 +21,7 @@ const url = useAsset(props.src);
         { 'ring-primary animate-pulse': active },
       ]"
     >
-      <img :src="url" :alt />
+      <img :src="useAsset(src)" :alt />
     </div>
   </div>
 </template>

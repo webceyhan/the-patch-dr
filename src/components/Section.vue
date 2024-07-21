@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useAsset } from "../composables/useAsset";
+import { useAssetForCSS } from "../composables/useAsset";
 
 /**
  * Types
@@ -9,9 +9,7 @@ interface Props {
   centered?: boolean;
 }
 
-const props = defineProps<Props>();
-
-const overlayUrl = useAsset(props.overlaySrc!);
+defineProps<Props>();
 </script>
 
 <template>
@@ -23,7 +21,7 @@ const overlayUrl = useAsset(props.overlaySrc!);
         'bg-base-content text-base-100 bg-cover bg-center bg-fixed bg-no-repeat': overlaySrc, // dark
       },
     ]"
-    :style="{ backgroundImage: overlaySrc ? `url('${overlayUrl}')` : undefined }"
+    :style="{ backgroundImage: useAssetForCSS(overlaySrc) }"
   >
     <!-- overlay -->
     <slot name="overlay" />
