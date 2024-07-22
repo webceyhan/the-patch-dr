@@ -20,8 +20,8 @@ const filteredWorks = computed(() =>
 
 <template>
   <Section>
-    <SectionTitle class="text-neutral-400">
-      A few of our recent projects
+    <SectionTitle>
+      A few of our recent <span class="text-fancy-primary">projects</span>
     </SectionTitle>
 
     <!-- filters -->

@@ -7,7 +7,7 @@ import Card from "../components/Card.vue";
 
 <template>
   <Section>
-    <SectionTitle class="text-neutral-400 uppercase"> What we do best </SectionTitle>
+    <SectionTitle> What we do <span class="text-fancy-primary">best</span> </SectionTitle>
 
     <!-- grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
