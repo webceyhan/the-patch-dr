@@ -15,8 +15,11 @@ defineProps<Props>();
 
 <template>
   <div
-    class="card overflow-hidden rounded-badge shadow-lg"
-    :class="{ 'image-full': flipped }"
+    :data-theme="flipped ? 'dark' : 'light'"
+    :class="[
+      'card overflow-hidden rounded-badge shadow-md shadow-current',
+      { 'image-full': flipped },
+    ]"
   >
     <!-- overlay -->
     <figure v-if="overlaySrc">
@@ -27,12 +30,12 @@ defineProps<Props>();
       :class="[
         'card-body p-8',
         {
-          'bg-black/85 opacity-0 hover:opacity-100 transition-all duration-500': flipped,
+          'bg-base-300/90 opacity-0 hover:opacity-100 transition-all duration-500': flipped,
         },
       ]"
     >
       <!-- title -->
-      <h2 v-if="title" class="card-title uppercase">
+      <h2 v-if="title" class="card-title uppercase font-extrabold lg:tracking-widest">
         {{ title }}
       </h2>
 

@@ -9,7 +9,7 @@ import Icon from "../components/Icon.vue";
 <template>
   <Section overlaySrc="/images/welcome-section-bg.jpg" centered>
     <SectionTitle class="uppercase">
-      Surgery, for <span class="text-primary">spaces</span>.
+      Surgery, for <span class="text-fancy-primary">spaces</span>.
     </SectionTitle>
 
     <p class="max-w-3xl text-xl pb-20">

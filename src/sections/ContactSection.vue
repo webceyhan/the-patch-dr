@@ -3,6 +3,7 @@ import { COMPANY } from "../data/company";
 import { CONTACT_LINKS, SOCIAL_LINKS } from "../data/contact";
 import Section from "../components/Section.vue";
 import SectionTitle from "../components/SectionTitle.vue";
+import SectionSubtitle from "../components/SectionSubtitle.vue";
 import Icon from "../components/Icon.vue";
 import Link from "../components/Link.vue";
 </script>
@@ -11,12 +12,12 @@ import Link from "../components/Link.vue";
   <Section overlaySrc="/images/contact-section-bg.jpg">
     <footer class="footer footer-center">
       <!-- header -->
-      <header class="space-y-2">
+      <header>
         <SectionTitle>Get In Touch</SectionTitle>
 
-        <h2 class="text-2xl text-primary">
+        <SectionSubtitle class="text-fancy-primary">
           Connect with us via email or phone, or check out our online profiles
-        </h2>
+        </SectionSubtitle>
       </header>
 
       <!-- contact info -->
@@ -34,7 +35,7 @@ import Link from "../components/Link.vue";
       <!-- social links -->
       <nav class="grid grid-flow-col gap-4">
         <Link v-for="link in SOCIAL_LINKS" :href="link.href!" target="_blank" greyed>
-          <Icon :name="link.icon!" class="size-16 rounded-full ring-1" />
+          <Icon :name="link.icon!" class="size-16 rounded-full ring-4" />
         </Link>
       </nav>
 

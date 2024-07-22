@@ -18,9 +18,9 @@ const {
 </script>
 
 <template>
-  <Section class="bg-base-200" centered>
+  <Section class="bg-primary-content" centered>
     <SectionTitle>
-      Hear from our <span class="text-primary">happy clients</span>
+      Hear from our <span class="text-fancy-primary">happy clients</span>
     </SectionTitle>
 
     <div

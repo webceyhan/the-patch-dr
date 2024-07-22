@@ -17,10 +17,10 @@ import Image from "../components/Image.vue";
       />
     </template>
 
-    <SectionTitle>
-      <span class="text-neutral-400">SNAP, </span>
-      <span class="text-primary">TEXT, </span>
-      <span class="text-neutral-600">QUOTE.</span>
+    <SectionTitle class="uppercase">
+      <span class="text-neutral-500">Snap, </span>
+      <span class="text-fancy-primary">Text, </span>
+      <span>Quote.</span>
     </SectionTitle>
 
     <div class="max-w-3xl text-xl backdrop-blur-sm space-y-10">

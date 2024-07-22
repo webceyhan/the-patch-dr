@@ -9,7 +9,7 @@ import Image from "../components/Image.vue";
   <Section overlaySrc="/images/about-section-bg.jpg">
     <SectionTitle>
       From the smallest patch repair to the whole house reno,
-      <span class="text-primary">{{ COMPANY.name }}</span> has you covered.
+      <span class="text-fancy-primary">{{ COMPANY.name }}</span> has you covered.
     </SectionTitle>
 
     <div class="flex flex-col lg:flex-row items-center gap-10">
