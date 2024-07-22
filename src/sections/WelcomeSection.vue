@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import { COMPANY } from "../data/company";
 import Section from "../components/Section.vue";
+import SectionTitle from "../components/SectionTitle.vue";
 import Button from "../components/Button.vue";
 import Icon from "../components/Icon.vue";
 </script>
 
 <template>
   <Section overlaySrc="/images/welcome-section-bg.jpg" centered>
-    <template #title> SURGERY, FOR <span class="text-primary">SPACES</span>. </template>
+    <SectionTitle class="uppercase">
+      Surgery, for <span class="text-primary">spaces</span>.
+    </SectionTitle>
 
     <p class="max-w-3xl text-xl pb-20">
       Combining quality, price, and friendly customer service, we offer one of the best

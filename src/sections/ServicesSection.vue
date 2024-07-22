@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { SERVICES } from "../data/service";
 import Section from "../components/Section.vue";
+import SectionTitle from "../components/SectionTitle.vue";
 import Card from "../components/Card.vue";
 </script>
 
 <template>
   <Section>
-    <template #title>
-      <h1 class="text-neutral-400">WHAT WE DO BEST</h1>
-    </template>
+    <SectionTitle class="text-neutral-400 uppercase"> What we do best </SectionTitle>
 
     <!-- grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">

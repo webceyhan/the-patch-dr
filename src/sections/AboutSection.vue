@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { COMPANY } from "../data/company";
 import Section from "../components/Section.vue";
+import SectionTitle from "../components/SectionTitle.vue";
 import Image from "../components/Image.vue";
 </script>
 
 <template>
   <Section overlaySrc="/images/about-section-bg.jpg">
-    <template #title>
+    <SectionTitle>
       From the smallest patch repair to the whole house reno,
       <span class="text-primary">{{ COMPANY.name }}</span> has you covered.
-    </template>
+    </SectionTitle>
 
     <div class="flex flex-col lg:flex-row items-center gap-10">
       <div class="space-y-10">

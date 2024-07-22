@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { SERVICES } from "../data/service";
 import Section from "../components/Section.vue";
+import SectionTitle from "../components/SectionTitle.vue";
 </script>
 
 <template>
@@ -9,13 +10,13 @@ import Section from "../components/Section.vue";
       <img src="/images/logo-aside.png" class="absolute right-0 max-w-xs" />
     </template>
 
-    <template #title>
+    <SectionTitle>
       Our complete list of services
 
       <p class="text-2xl text-primary uppercase tracking-wide">
         Quality comes naturally with passion
       </p>
-    </template>
+    </SectionTitle>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-x-32">
       <div v-for="(service, index) in SERVICES" class="">

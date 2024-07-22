@@ -33,11 +33,6 @@ overlaySrc && useLazyBackground(section, overlaySrc);
 
     <div :class="['hero-content text-lg', { 'text-center': centered }]">
       <div :class="['flex flex-col gap-10', { 'items-center': centered }]">
-        <!-- title -->
-        <h1 v-if="$slots.title" class="text-3xl md:text-5xl font-bold">
-          <slot name="title" />
-        </h1>
-
         <!-- content -->
         <slot />
       </div>
