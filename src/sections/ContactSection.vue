@@ -34,7 +34,7 @@ import Link from "../components/Link.vue";
       <!-- social links -->
       <nav class="grid grid-flow-col gap-4">
         <Link v-for="link in SOCIAL_LINKS" :href="link.href!" target="_blank" greyed>
-          <Icon :name="link.icon!" class="size-16 rounded-full ring-1" />
+          <Icon :name="link.icon!" class="size-16 rounded-full ring-4 ring-base-content" />
         </Link>
       </nav>
 
