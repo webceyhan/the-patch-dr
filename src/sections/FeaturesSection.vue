@@ -14,7 +14,7 @@ import SectionSubtitle from "../components/SectionSubtitle.vue";
     <header>
       <SectionTitle> Our complete list of services </SectionTitle>
 
-      <SectionSubtitle class="text-primary">
+      <SectionSubtitle class="text-fancy-primary">
         Quality comes naturally with passion
       </SectionSubtitle>
     </header>

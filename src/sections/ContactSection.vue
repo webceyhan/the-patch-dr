@@ -15,7 +15,7 @@ import Link from "../components/Link.vue";
       <header>
         <SectionTitle>Get In Touch</SectionTitle>
 
-        <SectionSubtitle class="text-primary">
+        <SectionSubtitle class="text-fancy-primary">
           Connect with us via email or phone, or check out our online profiles
         </SectionSubtitle>
       </header>

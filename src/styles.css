@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-fancy-primary {
+    @apply text-transparent bg-gradient-to-bl bg-clip-text from-base-content via-primary-content to-primary;
+}
