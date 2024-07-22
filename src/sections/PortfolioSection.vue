@@ -6,6 +6,7 @@ import SectionTitle from "../components/SectionTitle.vue";
 import Card from "../components/Card.vue";
 import Icon from "../components/Icon.vue";
 import Image from "../components/Image.vue";
+import Button from "../components/Button.vue";
 
 const filter = ref("all");
 const photos = ref<typeof WORKS[0]["photos"]>([]);
@@ -43,16 +44,21 @@ const filteredWorks = computed(() =>
         :overlaySrc="item.imageUri"
         flipped
       >
-        <h2 class="card-title text-primary uppercase">{{ item.title }}</h2>
+        <h2 class="card-title text-fancy-primary text-2xl font-bold uppercase py-2">
+          {{ item.title }}
+        </h2>
 
-        <h3 class="text-neutral-400 font-bold">Location: {{ item.location }}</h3>
+        <h3 class="text-neutral-400 text-xl font-bold flex items-center gap-2">
+          <Icon name="location-dot" class="size-6" />
+          {{ item.location }}
+        </h3>
 
-        <p class="text-white py-4">{{ item.description }}</p>
+        <p class="py-4">{{ item.description }}</p>
 
         <div class="card-actions justify-end">
-          <button class="btn btn-sm bg-white" @click="photos = item.photos">
+          <Button class="btn-sm btn-primary" @click="photos = item.photos">
             Take a look
-          </button>
+          </Button>
         </div>
       </Card>
     </div>

@@ -13,7 +13,7 @@ import Card from "../components/Card.vue";
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <Card
         v-for="service in SERVICES"
-        class="bg-primary text-base-100"
+        class="bg-primary text-primary-content"
         :overlaySrc="service.imageUri"
         :title="service.title"
       />
