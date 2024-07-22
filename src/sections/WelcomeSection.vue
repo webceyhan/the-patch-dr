@@ -18,11 +18,7 @@ import Icon from "../components/Icon.vue";
       with us for a free quote today.
     </p>
 
-    <Button
-      class="btn-primary btn-outline !text-primary-content"
-      :href="`tel:${COMPANY.phone}`"
-      large
-    >
+    <Button class="btn-primary btn-outline" :href="`tel:${COMPANY.phone}`" large>
       <Icon name="phone" class="size-8" />
       {{ COMPANY.phone }}
     </Button>

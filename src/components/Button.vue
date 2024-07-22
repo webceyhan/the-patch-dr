@@ -14,7 +14,7 @@ defineProps<Props>();
 <template>
   <a
     :class="[
-      'btn gap-4 shadow-lg shadow-neutral-400',
+      'btn gap-4 shadow-lg shadow-current',
       {
         'btn-block h-16 text-3xl tracking-widest rounded-full': large,
       },
