@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .text-fancy-primary {
-    @apply text-transparent bg-gradient-to-bl bg-clip-text from-base-content via-primary-content to-primary;
+    @apply text-transparent bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] bg-clip-text from-base-content via-primary to-primary-content;
+    /* @apply text-transparent bg-gradient-to-br bg-clip-text from-base-content via-primary to-primary-content; */
 }
