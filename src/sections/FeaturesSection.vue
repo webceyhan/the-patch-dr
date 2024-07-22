@@ -22,7 +22,7 @@ import SectionSubtitle from "../components/SectionSubtitle.vue";
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-x-32">
       <div v-for="(service, index) in SERVICES" class="">
         <h3 class="text-2xl uppercase py-2">
-          <span class="text-primary"> 0{{ index + 1 }}. </span>
+          <span class="font-extrabold font-mono text-primary"> 0{{ index + 1 }}.</span>
           {{ service.title }}
         </h3>
 
