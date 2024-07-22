@@ -2,6 +2,7 @@
 import { computed, ref } from "vue";
 import { WORKS, WORK_TAGS } from "../data/work";
 import Section from "../components/Section.vue";
+import SectionTitle from "../components/SectionTitle.vue";
 import Card from "../components/Card.vue";
 import Icon from "../components/Icon.vue";
 import Image from "../components/Image.vue";
@@ -18,9 +19,9 @@ const filteredWorks = computed(() =>
 
 <template>
   <Section>
-    <template #title class="uppercase text-neutral-400">
+    <SectionTitle class="text-neutral-400">
       A few of our recent projects
-    </template>
+    </SectionTitle>
 
     <!-- filters -->
     <ul

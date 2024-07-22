@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { COMPANY } from "../data/company";
 import Section from "../components/Section.vue";
+import SectionTitle from "../components/SectionTitle.vue";
 import Button from "../components/Button.vue";
 import Icon from "../components/Icon.vue";
 import Image from "../components/Image.vue";
@@ -16,11 +17,11 @@ import Image from "../components/Image.vue";
       />
     </template>
 
-    <template #title>
+    <SectionTitle>
       <span class="text-neutral-400">SNAP, </span>
       <span class="text-primary">TEXT, </span>
       <span class="text-neutral-600">QUOTE.</span>
-    </template>
+    </SectionTitle>
 
     <div class="max-w-3xl text-xl backdrop-blur-sm space-y-10">
       <p>

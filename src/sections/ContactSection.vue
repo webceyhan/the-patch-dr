@@ -2,6 +2,7 @@
 import { COMPANY } from "../data/company";
 import { CONTACT_LINKS, SOCIAL_LINKS } from "../data/contact";
 import Section from "../components/Section.vue";
+import SectionTitle from "../components/SectionTitle.vue";
 import Icon from "../components/Icon.vue";
 import Link from "../components/Link.vue";
 </script>
@@ -11,7 +12,7 @@ import Link from "../components/Link.vue";
     <footer class="footer footer-center">
       <!-- header -->
       <header class="space-y-2">
-        <h1 class="text-4xl md:text-6xl font-bold">Get In Touch</h1>
+        <SectionTitle>Get In Touch</SectionTitle>
 
         <h2 class="text-2xl text-primary">
           Connect with us via email or phone, or check out our online profiles

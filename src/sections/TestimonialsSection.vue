@@ -2,9 +2,10 @@
 import { TESTIMONIALS } from "../data/testimonial";
 import { useSlider } from "../composables/useSlider";
 import Section from "../components/Section.vue";
+import SectionTitle from "../components/SectionTitle.vue";
+import Progress from "../components/Progress.vue";
 import Avatar from "../components/Avatar.vue";
 import Icon from "../components/Icon.vue";
-import Progress from "../components/Progress.vue";
 
 const {
   progress,
@@ -18,10 +19,9 @@ const {
 
 <template>
   <Section class="bg-base-200" centered>
-    <template #title>
-      Hear from our
-      <span class="text-primary">happy clients</span>
-    </template>
+    <SectionTitle>
+      Hear from our <span class="text-primary">happy clients</span>
+    </SectionTitle>
 
     <div
       class="flex flex-col items-center gap-10"
